@@ -47,8 +47,8 @@ export const sortProducts = (
   });
 };
 
-export const productSearchRoute = (app: Application) => {
-  let products = [...require('./products.json')];
+export const productSearchRoute = (app: Application): void => {
+  let products = [...require('./products.json')] as Product[];
 
   app.post('/api/products/search', (req: Request, res: Response) => {
     const query: ProductSearchQuery = req.body;
