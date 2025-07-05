@@ -3,7 +3,7 @@ import {
   provideExperimentalZonelessChangeDetection,
 } from '@angular/core';
 import { provideRouter } from '@angular/router';
-import { appRoutes } from './app.routes';
+import { ROUTES } from '@ssrmart/client/feature-shell';
 import {
   provideClientHydration,
   withEventReplay,
@@ -13,6 +13,6 @@ export const appConfig: ApplicationConfig = {
   providers: [
     provideClientHydration(withEventReplay()),
     provideExperimentalZonelessChangeDetection(),
-    provideRouter(appRoutes),
+    provideRouter(ROUTES),
   ],
 };

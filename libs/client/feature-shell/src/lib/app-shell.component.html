@@ -1,0 +1,20 @@
+<mat-toolbar role="heading">
+  <img ngSrc="/logo.svg" width="120" height="40" alt="SRRmart logo" />
+
+  <nav>
+    <ul>
+      @for (item of navItems; track item.path) {
+      <li>
+        <a [routerLink]="item.path">{{ item.label }}</a>
+      </li>
+      }
+
+      <li>
+        <a matIconButton [routerLink]="'/cart'">
+          <mat-icon>shopping_cart</mat-icon>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</mat-toolbar>
+<router-outlet />
