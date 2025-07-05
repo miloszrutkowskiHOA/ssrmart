@@ -17,4 +17,15 @@
       ),
     )
   );
+
+  @include mat.typography-hierarchy(
+    mat.define-theme(
+      (
+        typography: (
+          use-system-variables: true,
+          system-variables-prefix: mat-sys,
+        ),
+      )
+    )
+  );
 }

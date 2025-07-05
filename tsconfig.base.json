@@ -15,6 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@ssrmart/client/feature-home-page": [
+        "libs/client/feature-home-page/src/index.ts"
+      ],
       "@ssrmart/client/feature-shell": [
         "libs/client/feature-shell/src/index.ts"
       ],
