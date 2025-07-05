@@ -28,6 +28,13 @@ const NAV_ITEMS: NavItem[] = [
 @Component({
   selector: 'ssrmart-app-shell',
   templateUrl: './app-shell.component.html',
+  styles: [
+    `
+      .mat-icon.mat-primary {
+        --mat-icon-color: var(--mat-sys-primary);
+      }
+    `,
+  ],
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [
     MatToolbarModule,
