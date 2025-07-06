@@ -1,0 +1,12 @@
+@use '@angular/material' as mat;
+
+@mixin mat-button {
+  .mat-accent-button {
+    @include mat.button-overrides(
+      (
+        filled-container-color: var(--mat-sys-secondary),
+        filled-label-text-color: var(--mat-sys-on-secondary),
+      )
+    );
+  }
+}

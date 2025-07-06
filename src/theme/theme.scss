@@ -1,5 +1,6 @@
 @use '@angular/material' as mat;
 @use './theme-colors.scss' as theme-colors;
+@use './mat-button.scss' as mat-button;
 
 @mixin theme {
   @include mat.theme(
@@ -28,4 +29,6 @@
       )
     )
   );
+
+  @include mat-button.mat-button;
 }

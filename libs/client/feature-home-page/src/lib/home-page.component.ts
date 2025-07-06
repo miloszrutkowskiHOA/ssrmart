@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
+import { NgOptimizedImage } from '@angular/common';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -17,6 +18,6 @@ import { RouterLink } from '@angular/router';
     `,
   ],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [MatButtonModule, RouterLink],
+  imports: [MatButtonModule, RouterLink, NgOptimizedImage],
 })
 export class HomePageComponent {}

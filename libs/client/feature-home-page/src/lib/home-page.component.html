@@ -1,6 +1,6 @@
 <!-- Hero Section -->
 <section
-  class="flex flex-col items-center gap-8 p-16 text-[--mat-sys-on-primary] hero-section"
+  class="flex flex-col items-center gap-6 p-16 text-[--mat-sys-on-primary] hero-section"
 >
   <h1>Smart Electronics for Modern Living</h1>
 
@@ -8,5 +8,38 @@
     Discover cutting-edge technology that tranforms yout everyday experience
   </p>
 
-  <button mat-flat-button color="accent">Shop Now</button>
+  <a matButton="filled" class="mat-accent-button" routerLink="/products"
+    >Shop Now</a
+  >
+</section>
+
+<!-- Promo Section -->
+<section
+  class="flex flex-col lg:flex-row justify-between items-center gap-8 py-8 px-16"
+>
+  <div class="flex-1 flex flex-col gap-4 max-w-prose">
+    <h2>Premium Quality, Unbeatable Pricices</h2>
+
+    <p class="mat-body-large">
+      At SRRmart, we believe everyone deserves access to the latest technology.
+      Our curated selection of premium electronics combines innovation with
+      affordability, ensuring you get the best value for your investment.
+    </p>
+
+    <p class="mat-body-large">
+      From smartphones to smart home devices, gaming gear to professional
+      equipment - we've got everything you need to stay connected and productive
+      in today's digital world.
+    </p>
+  </div>
+
+  <img
+    ngSrc="/promo-section-image.jpg"
+    width="640"
+    height="426"
+    priority
+    alt="Smartphone, smartwatch, headphones, and laptop on desk"
+  />
+
+  <!-- https://unsplash.com/photos/black-cordless-headphones-beside-closed-black-laptop-computer-and-smartphone-_aXa21cf7rY -->
 </section>
