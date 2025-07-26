@@ -21,6 +21,9 @@
       "@ssrmart/client/feature-shell": [
         "libs/client/feature-shell/src/index.ts"
       ],
+      "@ssrmart/client/ui-product-card": [
+        "libs/client/ui-product-card/src/index.ts"
+      ],
       "@ssrmart/server/products": ["libs/server/products/src/index.ts"],
       "@ssrmart/shared/types": ["libs/shared/types/src/index.ts"]
     }
