@@ -18,4 +18,5 @@ export type ProductSearchQuery = {
   filters?: ProductSearchFilters;
   sort?: ProductSearchSortingOptions;
   term?: string;
+  limit?: number;
 };

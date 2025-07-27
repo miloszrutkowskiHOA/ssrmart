@@ -44,3 +44,7 @@ export const sortProducts = (
     return 0;
   });
 };
+
+export const limitProducts = (products: Product[], limit: number): Product[] => {
+  return products.slice(0, limit);
+};

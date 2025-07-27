@@ -4,6 +4,7 @@ import {
   filterByCategory,
   filterByIsBestSeller,
   filterByTerm,
+  limitProducts,
   sortProducts,
 } from './product-search.utils';
 
@@ -27,6 +28,10 @@ export const productSearchRoute = (app: Application): void => {
 
     if (query.sort) {
       products = sortProducts(products, query.sort);
+    }
+
+    if (query.limit && query.limit > 0) {
+      products = limitProducts(products, query.limit);
     }
 
     res.json(products);
