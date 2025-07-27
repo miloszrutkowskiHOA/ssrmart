@@ -1,5 +1,5 @@
 import { Product, ProductSearchQuery } from '@ssrmart/shared/types';
-import { Application, Request, Response } from 'express';
+import { Router, Request, Response } from 'express';
 import {
   filterByCategory,
   filterByIsBestSeller,
@@ -8,10 +8,10 @@ import {
   sortProducts,
 } from './product-search.utils';
 
-export const productSearchRoute = (app: Application): void => {
+export const productSearchRoute = (router: Router): void => {
   let products = [...require('./products.json')] as Product[];
 
-  app.post('/api/products/search', (req: Request, res: Response) => {
+  router.post('/products', (req: Request, res: Response) => {
     const query: ProductSearchQuery = req.body;
 
     if (query.filters?.category) {

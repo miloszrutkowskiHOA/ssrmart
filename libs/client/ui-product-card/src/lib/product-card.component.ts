@@ -4,7 +4,6 @@ import { NgOptimizedImage } from '@angular/common';
 import { Product } from '@ssrmart/shared/types';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
-import { RouterLink } from '@angular/router';
 import { CurrencyPipe } from '@angular/common';
 
 @Component({
@@ -15,7 +14,6 @@ import { CurrencyPipe } from '@angular/common';
     NgOptimizedImage,
     MatCardModule,
     MatIconModule,
-    RouterLink,
     CurrencyPipe,
   ],
   host: {

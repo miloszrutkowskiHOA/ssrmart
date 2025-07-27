@@ -9,6 +9,7 @@ import {
   withEventReplay,
 } from '@angular/platform-browser';
 import { provideHttpClient } from '@angular/common/http';
+import { provideConfig } from '@ssrmart/shared/config';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -16,5 +17,9 @@ export const appConfig: ApplicationConfig = {
     provideZonelessChangeDetection(),
     provideRouter(ROUTES),
     provideHttpClient(),
+    provideConfig({
+      baseUrl: 'http://localhost:4200',
+      apiUrl: 'http://localhost:4200/api',
+    }),
   ],
 };

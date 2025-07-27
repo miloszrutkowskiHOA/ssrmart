@@ -1,8 +1,10 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { NgOptimizedImage } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { ProductCardComponent } from '@ssrmart/client/ui-product-card';
+import { ProductService } from '@ssrmart/client/data-access-product';
+import { rxResource } from '@angular/core/rxjs-interop';
 
 @Component({
   selector: 'ssrmart-home-page',
@@ -26,4 +28,16 @@ import { ProductCardComponent } from '@ssrmart/client/ui-product-card';
     ProductCardComponent,
   ],
 })
-export class HomePageComponent {}
+export class HomePageComponent {
+  private readonly _productService = inject(ProductService);
+
+  readonly bestsellersResource = rxResource({
+    stream: () =>
+      this._productService.searchProducts({
+        filters: {
+          isBestSeller: true,
+        },
+        limit: 3,
+      }),
+  });
+}
