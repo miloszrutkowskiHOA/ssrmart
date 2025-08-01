@@ -1,8 +1,9 @@
 export default {
-  displayName: 'ssrmart-client-ui-product-card',
-  preset: '../../../jest.preset.js',
+  displayName: 'ssrmart-client-products-data-access',
+  preset: '../../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../../../coverage/libs/client/ui-product-card',
+  coverageDirectory:
+    '../../../../coverage/libs/client/products/data-access-product',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',

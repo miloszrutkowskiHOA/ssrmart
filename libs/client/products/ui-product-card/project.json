@@ -1,7 +1,7 @@
 {
-  "name": "ssrmart-client-ui-product-card",
-  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/client/ui-product-card/src",
+  "name": "ssrmart-client-products-ui-product-card",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/client/products/ui-product-card/src",
   "prefix": "ssrmart",
   "projectType": "library",
   "tags": [],
@@ -10,7 +10,7 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "libs/client/ui-product-card/jest.config.ts"
+        "jestConfig": "libs/client/products/ui-product-card/jest.config.ts"
       }
     },
     "lint": {

@@ -15,17 +15,17 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@ssrmart/client/data-access-product": [
-        "libs/client/data-access-product/src/index.ts"
-      ],
       "@ssrmart/client/feature-home-page": [
         "libs/client/feature-home-page/src/index.ts"
       ],
       "@ssrmart/client/feature-shell": [
         "libs/client/feature-shell/src/index.ts"
       ],
-      "@ssrmart/client/ui-product-card": [
-        "libs/client/ui-product-card/src/index.ts"
+      "@ssrmart/client/products/products-data-access": [
+        "libs/client/products/data-access-product/src/index.ts"
+      ],
+      "@ssrmart/client/products/ui-product-card": [
+        "libs/client/products/ui-product-card/src/index.ts"
       ],
       "@ssrmart/server/products": ["libs/server/products/src/index.ts"],
       "@ssrmart/shared/config": ["libs/shared/config/src/index.ts"],

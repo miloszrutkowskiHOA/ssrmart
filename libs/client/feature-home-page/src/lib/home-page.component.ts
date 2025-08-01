@@ -2,8 +2,8 @@ import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { NgOptimizedImage } from '@angular/common';
 import { RouterLink } from '@angular/router';
-import { ProductCardComponent } from '@ssrmart/client/ui-product-card';
-import { ProductService } from '@ssrmart/client/data-access-product';
+import { ProductCardComponent } from '@ssrmart/client/products/ui-product-card';
+import { ProductService } from '@ssrmart/client/products/products-data-access';
 import { rxResource } from '@angular/core/rxjs-interop';
 
 @Component({

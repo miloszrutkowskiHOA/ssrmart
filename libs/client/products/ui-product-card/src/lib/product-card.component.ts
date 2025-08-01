@@ -10,12 +10,7 @@ import { CurrencyPipe } from '@angular/common';
   selector: 'ssrmart-product-card',
   templateUrl: './product-card.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [
-    NgOptimizedImage,
-    MatCardModule,
-    MatIconModule,
-    CurrencyPipe,
-  ],
+  imports: [NgOptimizedImage, MatCardModule, MatIconModule, CurrencyPipe],
   host: {
     class: 'block max-w-[25rem]',
   },
