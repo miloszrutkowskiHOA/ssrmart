@@ -12,6 +12,25 @@ export const ROUTES: Routes = [
             (m) => m.HomePageComponent
           ),
       },
+      {
+        path: 'products',
+        children: [
+          {
+            path: '',
+            loadComponent: () =>
+              import(
+                '@ssrmart/client/products/feature-product-search-page'
+              ).then((m) => m.ProductSearchPageComponent),
+          },
+          {
+            path: ':category',
+            loadComponent: () =>
+              import(
+                '@ssrmart/client/products/feature-product-search-page'
+              ).then((m) => m.ProductSearchPageComponent),
+          },
+        ],
+      },
     ],
   },
 ];

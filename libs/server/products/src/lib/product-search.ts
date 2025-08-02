@@ -3,16 +3,18 @@ import { Router, Request, Response } from 'express';
 import {
   filterByCategory,
   filterByIsBestSeller,
+  filterByPriceRange,
   filterByTerm,
   limitProducts,
   sortProducts,
+  validatePriceRange,
 } from './product-search.utils';
 
 export const productSearchRoute = (router: Router): void => {
-  let products = [...require('./products.json')] as Product[];
-
   router.post('/products', (req: Request, res: Response) => {
     const query: ProductSearchQuery = req.body;
+
+    let products = [...require('./products.json')] as Product[];
 
     if (query.filters?.category) {
       products = filterByCategory(products, query.filters.category);
@@ -20,6 +22,19 @@ export const productSearchRoute = (router: Router): void => {
 
     if (query.filters?.isBestSeller) {
       products = filterByIsBestSeller(products, query.filters.isBestSeller);
+    }
+
+    if (query.filters?.priceRange) {
+      try {
+        validatePriceRange(query.filters.priceRange);
+      } catch (error: unknown) {
+        res.status(400).json({
+          error: error instanceof Error ? error.message : 'Invalid price range',
+        });
+        return;
+      }
+
+      products = filterByPriceRange(products, query.filters.priceRange);
     }
 
     if (query.term) {

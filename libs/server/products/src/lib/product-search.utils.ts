@@ -1,6 +1,7 @@
 import {
   Product,
   ProductCategory,
+  ProductSearchPriceRange,
   ProductSearchSortingOptions,
 } from '@ssrmart/shared/types';
 
@@ -24,11 +25,33 @@ export const filterByTerm = (products: Product[], term: string): Product[] => {
   );
 };
 
+export const validatePriceRange = (
+  priceRange: ProductSearchPriceRange
+): void => {
+  if (priceRange.min < 0) throw new Error('Price range minimum must be >= 0');
+  if (priceRange.min > priceRange.max)
+    throw new Error('Price range minimum must be <= maximum');
+};
+
+export const filterByPriceRange = (
+  products: Product[],
+  priceRange: ProductSearchPriceRange
+): Product[] => {
+  return products.filter(
+    (product) =>
+      product.price >= priceRange.min && product.price <= priceRange.max
+  );
+};
+
 export const sortProducts = (
   products: Product[],
   sorting: ProductSearchSortingOptions
 ): Product[] => {
   return products.sort((a, b) => {
+    if (sorting === 'name') {
+      return a.name.localeCompare(b.name);
+    }
+
     if (sorting === 'top-rated') {
       return b.rating - a.rating;
     }
@@ -45,6 +68,9 @@ export const sortProducts = (
   });
 };
 
-export const limitProducts = (products: Product[], limit: number): Product[] => {
+export const limitProducts = (
+  products: Product[],
+  limit: number
+): Product[] => {
   return products.slice(0, limit);
 };
