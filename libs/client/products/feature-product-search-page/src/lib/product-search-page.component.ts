@@ -55,11 +55,13 @@ export class ProductSearchPageComponent {
       PRODUCT_CATEGORIES.find((category) => category === value),
   });
 
+  readonly sort = queryController<ProductSearchSortingOptions>('sort', 'name');
   readonly term = queryController('term', '');
+
   readonly isBestSeller = queryController('bestsellers', false, {
     fromParam: Boolean,
   });
-  readonly sort = queryController<ProductSearchSortingOptions>('sort', 'name');
+
   readonly priceRange = queryController<ProductSearchPriceRange>(
     'price',
     DEFAULT_PRICE_RANGE,
@@ -82,5 +84,6 @@ export class ProductSearchPageComponent {
   readonly productSearchResource = rxResource({
     params: () => this.productSearchQuery(),
     stream: ({ params }) => this._productsService.searchProducts(params),
+    defaultValue: [],
   });
 }
