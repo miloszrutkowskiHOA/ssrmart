@@ -4,7 +4,7 @@
   "sourceRoot": "libs/client/products/feature-product-search-page/src",
   "prefix": "lib",
   "projectType": "library",
-  "tags": [],
+  "tags": ["scope:client", "type:feature"],
   "targets": {
     "test": {
       "executor": "@nx/jest:jest",

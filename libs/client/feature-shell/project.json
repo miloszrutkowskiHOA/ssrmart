@@ -4,7 +4,7 @@
   "sourceRoot": "libs/client/feature-shell/src",
   "prefix": "ssrmart",
   "projectType": "library",
-  "tags": [],
+  "tags": ["scope:client", "type:feature"],
   "targets": {
     "test": {
       "executor": "@nx/jest:jest",

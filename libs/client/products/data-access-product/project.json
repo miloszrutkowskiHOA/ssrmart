@@ -4,7 +4,7 @@
   "sourceRoot": "libs/client/products/data-access-product/src",
   "prefix": "lib",
   "projectType": "library",
-  "tags": [],
+  "tags": ["scope:client", "type:data-access"],
   "targets": {
     "build": {
       "executor": "@nx/angular:ng-packagr-lite",
