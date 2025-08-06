@@ -10,4 +10,5 @@ export type Product = {
   price: number;
   category: ProductCategory;
   isBestSeller: boolean;
+  keywords: string[];
 };

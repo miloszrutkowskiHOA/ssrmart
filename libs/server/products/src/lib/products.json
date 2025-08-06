@@ -8,7 +8,14 @@
     "rating": 4.6,
     "category": "accessories",
     "price": 24.99,
-    "isBestSeller": true
+    "isBestSeller": true,
+    "keywords": [
+      "portable charger",
+      "fast charging",
+      "10000mAh battery",
+      "travel power bank",
+      "smartphone charger"
+    ]
   },
   {
     "id": "550e8400-e29b-41d4-a716-446655440010",
@@ -19,7 +26,14 @@
     "rating": 4.5,
     "category": "accessories",
     "price": 149.99,
-    "isBestSeller": false
+    "isBestSeller": false,
+    "keywords": [
+      "wireless charging station",
+      "multi-device charger",
+      "phone earbuds smartwatch",
+      "desk charging pad",
+      "overnight charging station"
+    ]
   },
   {
     "id": "550e8400-e29b-41d4-a716-446655440011",
@@ -30,7 +44,14 @@
     "rating": 4.4,
     "category": "accessories",
     "price": 19.99,
-    "isBestSeller": false
+    "isBestSeller": false,
+    "keywords": [
+      "braided USB-C cable",
+      "fast charging cable",
+      "durable charging cord",
+      "6ft USB-C cable",
+      "data transfer cable"
+    ]
   },
   {
     "id": "550e8400-e29b-41d4-a716-446655440012",
@@ -41,7 +62,14 @@
     "rating": 4.5,
     "category": "accessories",
     "price": 22.99,
-    "isBestSeller": true
+    "isBestSeller": true,
+    "keywords": [
+      "USB 3.0 flash drive",
+      "128GB storage",
+      "fast transfer speed",
+      "encrypted flash drive",
+      "portable storage device"
+    ]
   },
   {
     "id": "550e8400-e29b-41d4-a716-446655440013",
@@ -52,7 +80,14 @@
     "rating": 4.6,
     "category": "accessories",
     "price": 79.99,
-    "isBestSeller": true
+    "isBestSeller": true,
+    "keywords": [
+      "1080p webcam",
+      "autofocus camera",
+      "video conferencing webcam",
+      "streaming camera",
+      "noise-canceling microphone"
+    ]
   },
   {
     "id": "550e8400-e29b-41d4-a716-446655440015",
@@ -63,7 +98,14 @@
     "rating": 4.8,
     "category": "accessories",
     "price": 159.99,
-    "isBestSeller": false
+    "isBestSeller": false,
+    "keywords": [
+      "camera backpack",
+      "laptop backpack",
+      "modular tech bag",
+      "photography gear bag",
+      "waterproof backpack"
+    ]
   },
   {
     "id": "550e8400-e29b-41d4-a716-446655440016",
@@ -74,7 +116,14 @@
     "rating": 4.5,
     "category": "accessories",
     "price": 34.99,
-    "isBestSeller": false
+    "isBestSeller": false,
+    "keywords": [
+      "magnetic phone stand",
+      "MagSafe compatible",
+      "360-degree rotation",
+      "adjustable phone holder",
+      "desk phone stand"
+    ]
   },
 
   {
@@ -86,7 +135,14 @@
     "rating": 4.7,
     "category": "audio",
     "price": 149.99,
-    "isBestSeller": true
+    "isBestSeller": true,
+    "keywords": [
+      "noise-canceling headphones",
+      "wireless Bluetooth headphones",
+      "over-ear headphones",
+      "30-hour battery life",
+      "hands-free calling"
+    ]
   },
   {
     "id": "b2c3d4e5-f6a7-8901-bcde-f23456789012",
@@ -97,7 +153,14 @@
     "rating": 4.5,
     "category": "audio",
     "price": 79.99,
-    "isBestSeller": true
+    "isBestSeller": true,
+    "keywords": [
+      "true wireless earbuds",
+      "touch control earbuds",
+      "waterproof earbuds",
+      "workout headphones",
+      "charging case earbuds"
+    ]
   },
   {
     "id": "c3d4e5f6-a7b8-9012-cdef-345678901234",
@@ -108,7 +171,14 @@
     "rating": 4.6,
     "category": "audio",
     "price": 89.99,
-    "isBestSeller": false
+    "isBestSeller": false,
+    "keywords": [
+      "portable Bluetooth speaker",
+      "waterproof speaker",
+      "floating speaker",
+      "bass speaker",
+      "20-hour battery speaker"
+    ]
   },
   {
     "id": "d4e5f6a7-b8c9-0123-defg-456789012345",
@@ -119,7 +189,14 @@
     "rating": 4.8,
     "category": "audio",
     "price": 229.99,
-    "isBestSeller": true
+    "isBestSeller": true,
+    "keywords": [
+      "soundbar with subwoofer",
+      "home theater system",
+      "3.1 channel soundbar",
+      "TV soundbar",
+      "wireless subwoofer"
+    ]
   },
   {
     "id": "e5f6a7b8-c9d0-1234-efgh-567890123456",
@@ -130,7 +207,14 @@
     "rating": 4.9,
     "category": "audio",
     "price": 179.99,
-    "isBestSeller": false
+    "isBestSeller": false,
+    "keywords": [
+      "studio monitor headphones",
+      "audio mixing headphones",
+      "professional headphones",
+      "flat frequency response",
+      "recording headphones"
+    ]
   },
   {
     "id": "f6a7b8c9-d0e1-2345-fghi-678901234567",
@@ -141,7 +225,14 @@
     "rating": 4.4,
     "category": "audio",
     "price": 129.99,
-    "isBestSeller": false
+    "isBestSeller": false,
+    "keywords": [
+      "vinyl record player",
+      "Bluetooth turntable",
+      "built-in speakers turntable",
+      "USB turntable",
+      "3-speed turntable"
+    ]
   },
   {
     "id": "a7b8c9d0-e1f2-3456-ghij-789012345678",
@@ -152,7 +243,14 @@
     "rating": 4.6,
     "category": "audio",
     "price": 99.99,
-    "isBestSeller": true
+    "isBestSeller": true,
+    "keywords": [
+      "gaming headset",
+      "7.1 surround sound",
+      "noise-canceling microphone",
+      "RGB gaming headset",
+      "multi-platform headset"
+    ]
   },
   {
     "id": "g1a2m3i4-n5g6-7890-abcd-ef1234567890",
@@ -163,7 +261,14 @@
     "rating": 4.8,
     "category": "gaming",
     "price": 499.99,
-    "isBestSeller": true
+    "isBestSeller": true,
+    "keywords": [
+      "next-gen gaming console",
+      "4K gaming console",
+      "ultra-fast SSD console",
+      "ray tracing console",
+      "backward compatible console"
+    ]
   },
   {
     "id": "g2b3a4m5-i6n7-8901-bcde-f23456789012",
@@ -174,7 +279,14 @@
     "rating": 4.7,
     "category": "gaming",
     "price": 79.99,
-    "isBestSeller": false
+    "isBestSeller": false,
+    "keywords": [
+      "wireless gaming controller",
+      "customizable controller",
+      "RGB gaming controller",
+      "anti-drift controller",
+      "40-hour battery controller"
+    ]
   },
   {
     "id": "g4d5c6b7-a8m9-0123-defg-456789012345",
@@ -185,7 +297,14 @@
     "rating": 4.5,
     "category": "gaming",
     "price": 129.99,
-    "isBestSeller": false
+    "isBestSeller": false,
+    "keywords": [
+      "mechanical gaming keyboard",
+      "RGB gaming keyboard",
+      "tactile switches keyboard",
+      "macro keys keyboard",
+      "aluminum gaming keyboard"
+    ]
   },
   {
     "id": "g5e6d7c8-b9a0-1234-efgh-567890123456",
@@ -196,7 +315,14 @@
     "rating": 4.4,
     "category": "gaming",
     "price": 89.99,
-    "isBestSeller": false
+    "isBestSeller": false,
+    "keywords": [
+      "16,000 DPI gaming mouse",
+      "programmable gaming mouse",
+      "RGB gaming mouse",
+      "lightweight gaming mouse",
+      "ergonomic gaming mouse"
+    ]
   },
 
   {
@@ -208,7 +334,14 @@
     "rating": 4.8,
     "category": "gaming",
     "price": 399.99,
-    "isBestSeller": true
+    "isBestSeller": true,
+    "keywords": [
+      "wireless VR headset",
+      "4K VR headset",
+      "motion tracking VR",
+      "hand tracking VR",
+      "spatial audio VR"
+    ]
   },
   {
     "id": "g2l3k4j5-i6h7-8901-lmno-234567890123",
@@ -219,7 +352,14 @@
     "rating": 4.7,
     "category": "gaming",
     "price": 599.99,
-    "isBestSeller": false
+    "isBestSeller": false,
+    "keywords": [
+      "4K gaming monitor",
+      "144Hz gaming monitor",
+      "HDR gaming monitor",
+      "32-inch gaming monitor",
+      "variable refresh rate monitor"
+    ]
   },
   {
     "id": "550e8400-e29b-41d4-a716-446655440020",
@@ -230,7 +370,14 @@
     "rating": 4.5,
     "category": "office",
     "price": 49.99,
-    "isBestSeller": true
+    "isBestSeller": true,
+    "keywords": [
+      "ergonomic wireless keyboard",
+      "quiet office keyboard",
+      "full-size keyboard",
+      "number pad keyboard",
+      "24-month battery keyboard"
+    ]
   },
   {
     "id": "550e8400-e29b-41d4-a716-446655440021",
@@ -241,7 +388,14 @@
     "rating": 4.4,
     "category": "office",
     "price": 159.99,
-    "isBestSeller": false
+    "isBestSeller": false,
+    "keywords": [
+      "24-inch LED monitor",
+      "Full HD monitor",
+      "IPS panel monitor",
+      "adjustable monitor stand",
+      "anti-glare monitor"
+    ]
   },
   {
     "id": "550e8400-e29b-41d4-a716-446655440022",
@@ -252,7 +406,14 @@
     "rating": 4.3,
     "category": "office",
     "price": 24.99,
-    "isBestSeller": false
+    "isBestSeller": false,
+    "keywords": [
+      "wireless optical mouse",
+      "ergonomic office mouse",
+      "precision tracking mouse",
+      "horizontal scroll mouse",
+      "battery-saving mouse"
+    ]
   },
   {
     "id": "550e8400-e29b-41d4-a716-446655440023",
@@ -263,7 +424,14 @@
     "rating": 4.7,
     "category": "office",
     "price": 89.99,
-    "isBestSeller": true
+    "isBestSeller": true,
+    "keywords": [
+      "dual-arm monitor stand",
+      "adjustable monitor stand",
+      "cable management stand",
+      "27-inch monitor stand",
+      "desk clamp monitor stand"
+    ]
   },
   {
     "id": "550e8400-e29b-41d4-a716-446655440024",
@@ -274,7 +442,14 @@
     "rating": 4.6,
     "category": "office",
     "price": 79.99,
-    "isBestSeller": false
+    "isBestSeller": false,
+    "keywords": [
+      "LED desk lamp",
+      "wireless charging lamp",
+      "USB charging lamp",
+      "adjustable desk lamp",
+      "touch control lamp"
+    ]
   },
   {
     "id": "550e8400-e29b-41d4-a716-446655440025",
@@ -285,7 +460,14 @@
     "rating": 4.8,
     "category": "office",
     "price": 199.99,
-    "isBestSeller": true
+    "isBestSeller": true,
+    "keywords": [
+      "ergonomic office chair",
+      "mesh office chair",
+      "lumbar support chair",
+      "adjustable office chair",
+      "breathable mesh chair"
+    ]
   },
   {
     "id": "550e8400-e29b-41d4-a716-446655440027",
@@ -296,7 +478,14 @@
     "rating": 4.5,
     "category": "office",
     "price": 29.99,
-    "isBestSeller": false
+    "isBestSeller": false,
+    "keywords": [
+      "wireless presenter remote",
+      "laser pointer remote",
+      "presentation remote",
+      "slide control remote",
+      "PowerPoint remote"
+    ]
   },
   {
     "id": "550e8400-e29b-41d4-a716-446655440028",
@@ -307,7 +496,14 @@
     "rating": 4.3,
     "category": "office",
     "price": 149.99,
-    "isBestSeller": true
+    "isBestSeller": true,
+    "keywords": [
+      "all-in-one printer",
+      "wireless inkjet printer",
+      "scanner printer",
+      "automatic document feeder",
+      "touchscreen printer"
+    ]
   },
   {
     "id": "550e8400-e29b-41d4-a716-446655440029",
@@ -318,7 +514,14 @@
     "rating": 4.6,
     "category": "office",
     "price": 249.99,
-    "isBestSeller": false
+    "isBestSeller": false,
+    "keywords": [
+      "standing desk converter",
+      "sit-stand workstation",
+      "height-adjustable desk",
+      "32-inch monitor converter",
+      "pneumatic lift converter"
+    ]
   },
 
   {
@@ -330,7 +533,14 @@
     "rating": 4.5,
     "category": "office",
     "price": 39.99,
-    "isBestSeller": true
+    "isBestSeller": true,
+    "keywords": [
+      "wireless charging pad",
+      "15W fast charging",
+      "Qi-enabled charger",
+      "LED indicator charger",
+      "non-slip charging pad"
+    ]
   },
   {
     "id": "550e8400-e29b-41d4-a716-446655440041",
@@ -341,7 +551,14 @@
     "rating": 4.9,
     "category": "photography",
     "price": 1299.99,
-    "isBestSeller": true
+    "isBestSeller": true,
+    "keywords": [
+      "32MP DSLR camera",
+      "full-frame DSLR",
+      "professional camera",
+      "dual memory card slots",
+      "weather-sealed camera"
+    ]
   },
   {
     "id": "550e8400-e29b-41d4-a716-446655440042",
@@ -352,7 +569,14 @@
     "rating": 4.6,
     "category": "photography",
     "price": 199.99,
-    "isBestSeller": true
+    "isBestSeller": true,
+    "keywords": [
+      "4K action camera",
+      "waterproof action camera",
+      "image stabilization camera",
+      "extreme sports camera",
+      "voice control camera"
+    ]
   },
   {
     "id": "550e8400-e29b-41d4-a716-446655440043",
@@ -363,7 +587,14 @@
     "rating": 4.7,
     "category": "photography",
     "price": 349.99,
-    "isBestSeller": false
+    "isBestSeller": false,
+    "keywords": [
+      "5K action camera",
+      "modular action camera",
+      "removable lens camera",
+      "live streaming camera",
+      "gimbal-like stabilization"
+    ]
   },
   {
     "id": "550e8400-e29b-41d4-a716-446655440044",
@@ -374,7 +605,14 @@
     "rating": 4.5,
     "category": "photography",
     "price": 699.99,
-    "isBestSeller": false
+    "isBestSeller": false,
+    "keywords": [
+      "4K drone camera",
+      "foldable drone",
+      "30-minute flight drone",
+      "obstacle avoidance drone",
+      "3-axis gimbal drone"
+    ]
   },
   {
     "id": "550e8400-e29b-41d4-a716-446655440045",
@@ -385,7 +623,14 @@
     "rating": 4.8,
     "category": "photography",
     "price": 1599.99,
-    "isBestSeller": true
+    "isBestSeller": true,
+    "keywords": [
+      "5.4K photography drone",
+      "professional drone",
+      "46-minute flight drone",
+      "advanced obstacle avoidance",
+      "1-inch sensor drone"
+    ]
   },
   {
     "id": "550e8400-e29b-41d4-a716-446655440046",
@@ -396,7 +641,14 @@
     "rating": 4.7,
     "category": "photography",
     "price": 299.99,
-    "isBestSeller": false
+    "isBestSeller": false,
+    "keywords": [
+      "carbon fiber tripod",
+      "lightweight tripod",
+      "ball head tripod",
+      "quick-release tripod",
+      "travel tripod"
+    ]
   },
   {
     "id": "550e8400-e29b-41d4-a716-446655440047",
@@ -407,7 +659,14 @@
     "rating": 4.9,
     "category": "photography",
     "price": 599.99,
-    "isBestSeller": true
+    "isBestSeller": true,
+    "keywords": [
+      "85mm f/1.4 lens",
+      "portrait lens",
+      "wide aperture lens",
+      "image stabilization lens",
+      "weather-sealed lens"
+    ]
   },
   {
     "id": "550e8400-e29b-41d4-a716-446655440050",
@@ -418,7 +677,14 @@
     "rating": 4.5,
     "category": "photography",
     "price": 79.99,
-    "isBestSeller": false
+    "isBestSeller": false,
+    "keywords": [
+      "quick-release camera strap",
+      "dual safety camera strap",
+      "padded camera strap",
+      "anti-slip camera strap",
+      "professional camera strap"
+    ]
   },
   {
     "id": "550e8400-e29b-41d4-a716-446655440051",
@@ -429,6 +695,13 @@
     "rating": 4.7,
     "category": "photography",
     "price": 189.99,
-    "isBestSeller": false
+    "isBestSeller": false,
+    "keywords": [
+      "wireless TTL flash",
+      "swivel head flash",
+      "bounce flash",
+      "high-speed sync flash",
+      "guide number 60 flash"
+    ]
   }
 ]
