@@ -16,7 +16,7 @@ import {
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatButtonModule } from '@angular/material/button';
-import { PRICE_RANGE_MIN, PRICE_RANGE_MAX } from '@ssrmarket/client/utils';
+import { PRICE_RANGE_MIN, PRICE_RANGE_MAX } from '@ssrmart/client/utils';
 import { CurrencyPipe } from '@angular/common';
 
 type NavigationItem = {

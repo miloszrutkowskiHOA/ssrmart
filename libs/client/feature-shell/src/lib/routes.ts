@@ -1,4 +1,8 @@
 import { Routes } from '@angular/router';
+import {
+  productCategoryGuard,
+  productResolver,
+} from '@ssrmart/client/products/products-data-access';
 
 export const ROUTES: Routes = [
   {
@@ -28,6 +32,17 @@ export const ROUTES: Routes = [
               import(
                 '@ssrmart/client/products/feature-product-search-page'
               ).then((m) => m.ProductSearchPageComponent),
+            canMatch: [productCategoryGuard],
+          },
+          {
+            path: ':id',
+            loadComponent: () =>
+              import('@ssrmart/client/products/product-details-page').then(
+                (m) => m.ProductDetailsPageComponent
+              ),
+            resolve: {
+              product: productResolver,
+            },
           },
         ],
       },

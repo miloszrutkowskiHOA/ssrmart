@@ -10,6 +10,7 @@ import {
 } from '@angular/platform-browser';
 import { provideHttpClient, withFetch } from '@angular/common/http';
 import { provideConfig } from '@ssrmart/shared/config';
+import { IMAGE_CONFIG } from '@angular/common';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -21,5 +22,11 @@ export const appConfig: ApplicationConfig = {
       baseUrl: 'http://localhost:4200',
       apiUrl: 'http://localhost:4200/api',
     }),
+    {
+      provide: IMAGE_CONFIG,
+      useValue: {
+        placeholderResolution: 30,
+      },
+    },
   ],
 };

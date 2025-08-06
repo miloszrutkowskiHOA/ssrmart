@@ -1,7 +1,7 @@
 <mat-card class="h-full">
   <img
     mat-card-image
-    [ngSrc]="product().imageUrl"
+    [ngSrc]="product().imageUrl | ssrmartImageSize: 'card'"
     [alt]="product().name"
     width="400"
     height="267"

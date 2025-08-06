@@ -11,7 +11,7 @@ import {
   priceRangeFromParam,
   priceRangeToParam,
   queryController,
-} from '@ssrmarket/client/utils';
+} from '@ssrmart/client/utils';
 import {
   ProductSearchFiltersComponent,
   ProductSearchSortingComponent,
