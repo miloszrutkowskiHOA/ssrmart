@@ -20,6 +20,7 @@
     "@angular/platform-server": "20.0.6",
     "@angular/router": "20.0.6",
     "@angular/ssr": "20.0.5",
+    "cors": "^2.8.5",
     "express": "^4.21.2",
     "rxjs": "~7.8.0"
   },
@@ -66,7 +67,6 @@
     "prettier": "^2.6.2",
     "tailwindcss": "^3.0.2",
     "ts-jest": "^29.1.0",
-    "ts-node": "10.9.1",
     "tslib": "^2.3.0",
     "typescript": "5.8.3",
     "typescript-eslint": "^8.33.1"
