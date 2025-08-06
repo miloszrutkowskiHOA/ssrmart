@@ -21,3 +21,12 @@
 </mat-toolbar>
 
 <router-outlet />
+
+<footer class="bg-black text-white">
+  <div class="max-w-[--section-max-w] mx-auto py-8 px-4 xl:px-0 flex gap-4">
+    <a [routerLink]="'/privacy-policy'">Privacy Policy</a>
+    <a [routerLink]="'/terms-of-service'">Terms of Service</a>
+    <div class="flex-1" aria-hidden="true"></div>
+    <p>&copy; {{ year }} SRRmart. All rights reserved.</p>
+  </div>
+</footer>

@@ -48,7 +48,14 @@
           "outputHashing": "all"
         },
         "development": {
-          "optimization": false,
+          "optimization": {
+            "styles": {
+              "minify": false,
+              "inlineCritical": true
+            },
+            "scripts": false,
+            "fonts": false
+          },
           "extractLicenses": false,
           "sourceMap": true
         }

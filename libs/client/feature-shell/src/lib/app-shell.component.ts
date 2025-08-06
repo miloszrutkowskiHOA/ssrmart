@@ -47,4 +47,5 @@ const NAV_ITEMS: NavItem[] = [
 })
 export default class AppShellComponent {
   readonly navItems = NAV_ITEMS;
+  readonly year = new Date().getFullYear();
 }
