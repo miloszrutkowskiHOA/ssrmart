@@ -1,10 +1,11 @@
-import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, effect, inject, input } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { NgOptimizedImage } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { ProductCardComponent } from '@ssrmart/client/products/ui-product-card';
-import { ProductService } from '@ssrmart/client/products/products-data-access';
+import { ProductService } from '@ssrmart/client/data-access';
 import { rxResource } from '@angular/core/rxjs-interop';
+import { SeoData, SeoService } from '@ssrmart/client/utils';
 
 @Component({
   selector: 'ssrmart-home-page',
@@ -30,6 +31,9 @@ import { rxResource } from '@angular/core/rxjs-interop';
 })
 export class HomePageComponent {
   private readonly _productService = inject(ProductService);
+  private readonly _seoService = inject(SeoService);
+
+  readonly seoData = input<SeoData>(); // resolver result binding
 
   readonly bestsellersResource = rxResource({
     stream: () =>
@@ -40,4 +44,8 @@ export class HomePageComponent {
         limit: 3,
       }),
   });
+
+  constructor() {
+    effect(() => this._seoService.setSeoData(this.seoData() ?? {}));
+  }
 }

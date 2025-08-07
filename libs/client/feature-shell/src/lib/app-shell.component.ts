@@ -2,7 +2,10 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { RouterLink, RouterOutlet } from '@angular/router';
+import {
+  RouterLink,
+  RouterOutlet,
+} from '@angular/router';
 import { NgOptimizedImage } from '@angular/common';
 
 type NavItem = {
@@ -44,6 +47,9 @@ const NAV_ITEMS: NavItem[] = [
     NgOptimizedImage,
     RouterOutlet,
   ],
+  host: {
+    class: 'flex flex-col min-h-screen',
+  },
 })
 export default class AppShellComponent {
   readonly navItems = NAV_ITEMS;

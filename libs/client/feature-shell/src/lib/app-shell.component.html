@@ -20,13 +20,19 @@
   </nav>
 </mat-toolbar>
 
-<router-outlet />
+<main class="flex-1">
+  <router-outlet />
+</main>
 
 <footer class="bg-black text-white">
-  <div class="max-w-[--section-max-w] mx-auto py-8 px-4 xl:px-0 flex gap-4">
-    <a [routerLink]="'/privacy-policy'">Privacy Policy</a>
-    <a [routerLink]="'/terms-of-service'">Terms of Service</a>
-    <div class="flex-1" aria-hidden="true"></div>
-    <p>&copy; {{ year }} SRRmart. All rights reserved.</p>
+  <div
+    class="max-w-[--section-max-w] mx-auto py-8 px-4 xl:px-0 flex flex-col md:flex-row items-center md:justify-between gap-4"
+  >
+    <div class="flex gap-4">
+      <a [routerLink]="'/privacy-policy'">Privacy Policy</a>
+      <a [routerLink]="'/terms-of-service'">Terms of Service</a>
+    </div>
+
+    <p class="!mb-0">&copy; {{ year }} SRRmart. All rights reserved.</p>
   </div>
 </footer>

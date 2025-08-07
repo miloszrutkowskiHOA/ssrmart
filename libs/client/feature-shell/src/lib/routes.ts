@@ -2,7 +2,10 @@ import { Routes } from '@angular/router';
 import {
   productCategoryGuard,
   productResolver,
-} from '@ssrmart/client/products/products-data-access';
+  productSeoResolver,
+  productSearchSeoResolver,
+  homePageSeoResolver,
+} from '@ssrmart/client/data-access';
 
 export const ROUTES: Routes = [
   {
@@ -15,6 +18,9 @@ export const ROUTES: Routes = [
           import('@ssrmart/client/feature-home-page').then(
             (m) => m.HomePageComponent
           ),
+        resolve: {
+          seo: homePageSeoResolver,
+        },
       },
       {
         path: 'products',
@@ -25,6 +31,10 @@ export const ROUTES: Routes = [
               import(
                 '@ssrmart/client/products/feature-product-search-page'
               ).then((m) => m.ProductSearchPageComponent),
+            resolve: {
+              seo: productSearchSeoResolver,
+            },
+            runGuardsAndResolvers: 'pathParamsOrQueryParamsChange',
           },
           {
             path: ':category',
@@ -33,6 +43,10 @@ export const ROUTES: Routes = [
                 '@ssrmart/client/products/feature-product-search-page'
               ).then((m) => m.ProductSearchPageComponent),
             canMatch: [productCategoryGuard],
+            resolve: {
+              seo: productSearchSeoResolver,
+            },
+            runGuardsAndResolvers: 'pathParamsOrQueryParamsChange',
           },
           {
             path: ':id',
@@ -42,6 +56,7 @@ export const ROUTES: Routes = [
               ),
             resolve: {
               product: productResolver,
+              seo: productSeoResolver,
             },
           },
         ],

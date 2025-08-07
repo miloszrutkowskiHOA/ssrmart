@@ -2,6 +2,7 @@ import {
   ChangeDetectionStrategy,
   Component,
   computed,
+  effect,
   inject,
   input,
 } from '@angular/core';
@@ -11,6 +12,8 @@ import {
   priceRangeFromParam,
   priceRangeToParam,
   queryController,
+  SeoData,
+  SeoService,
 } from '@ssrmart/client/utils';
 import {
   ProductSearchFiltersComponent,
@@ -23,7 +26,7 @@ import {
   ProductSearchQuery,
   ProductSearchSortingOptions,
 } from '@ssrmart/shared/types';
-import { ProductService } from '@ssrmart/client/products/products-data-access';
+import { ProductService } from '@ssrmart/client/data-access';
 import { rxResource } from '@angular/core/rxjs-interop';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { RouterLink } from '@angular/router';
@@ -48,12 +51,16 @@ import { ProductCardComponent } from '@ssrmart/client/products/ui-product-card';
 })
 export class ProductSearchPageComponent {
   private readonly _productsService = inject(ProductService);
+  private readonly _seoService = inject(SeoService);
 
   // route param binding
   readonly category = input(undefined, {
     transform: (value) =>
       PRODUCT_CATEGORIES.find((category) => category === value),
   });
+
+  // SEO data from resolver
+  readonly seo = input<SeoData>();
 
   readonly sort = queryController<ProductSearchSortingOptions>('sort', 'name');
   readonly term = queryController('term', '');
@@ -86,4 +93,10 @@ export class ProductSearchPageComponent {
     stream: ({ params }) => this._productsService.searchProducts(params),
     defaultValue: [],
   });
+
+  constructor() {
+    effect(() => {
+      this._seoService.setSeoData(this.seo() ?? {});
+    });
+  }
 }

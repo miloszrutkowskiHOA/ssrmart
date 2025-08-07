@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@ssrmart/client/utils": ["libs/client/utils/src/index.ts"],
+      "@ssrmart/client/data-access": ["libs/client/data-access/src/index.ts"],
       "@ssrmart/client/feature-home-page": [
         "libs/client/feature-home-page/src/index.ts"
       ],
@@ -28,12 +28,10 @@
       "@ssrmart/client/products/product-details-page": [
         "libs/client/products/feature-product-details-page/src/index.ts"
       ],
-      "@ssrmart/client/products/products-data-access": [
-        "libs/client/products/data-access-product/src/index.ts"
-      ],
       "@ssrmart/client/products/ui-product-card": [
         "libs/client/products/ui-product-card/src/index.ts"
       ],
+      "@ssrmart/client/utils": ["libs/client/utils/src/index.ts"],
       "@ssrmart/server/products": ["libs/server/products/src/index.ts"],
       "@ssrmart/shared/config": ["libs/shared/config/src/index.ts"],
       "@ssrmart/shared/types": ["libs/shared/types/src/index.ts"]

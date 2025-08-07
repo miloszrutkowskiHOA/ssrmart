@@ -16,7 +16,7 @@ import {
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatButtonModule } from '@angular/material/button';
-import { PRICE_RANGE_MIN, PRICE_RANGE_MAX } from '@ssrmart/client/utils';
+import { PRICE_RANGE_MIN, PRICE_RANGE_MAX, capitalize } from '@ssrmart/client/utils';
 import { CurrencyPipe } from '@angular/common';
 
 type NavigationItem = {
@@ -32,7 +32,7 @@ const CATEGORIES_NAVIGATION: NavigationItem[] = [
     id: 'all',
   },
   ...PRODUCT_CATEGORIES.map((category) => ({
-    label: category.charAt(0).toUpperCase() + category.slice(1),
+    label: capitalize(category),
     path: `/products/${category}`,
     id: category,
   })),
