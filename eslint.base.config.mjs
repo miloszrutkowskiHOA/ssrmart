@@ -17,6 +17,10 @@ export default [
           allow: ['^.*/eslint(\\.base)?\\.config\\.[cm]?js$'],
           depConstraints: [
             {
+              sourceTag: 'scope:app',
+              onlyDependOnLibsWithTags: ['scope:client', 'scope:server', 'scope:shared'],
+            },
+            {
               sourceTag: 'scope:client',
               onlyDependOnLibsWithTags: ['scope:client', 'scope:shared'],
             },

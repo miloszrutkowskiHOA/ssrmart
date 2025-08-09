@@ -1,4 +1,10 @@
-import { ChangeDetectionStrategy, Component, effect, inject, input } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  effect,
+  inject,
+  input,
+} from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { NgOptimizedImage } from '@angular/common';
 import { RouterLink } from '@angular/router';
@@ -33,7 +39,7 @@ export class HomePageComponent {
   private readonly _productService = inject(ProductService);
   private readonly _seoService = inject(SeoService);
 
-  readonly seoData = input<SeoData>(); // resolver result binding
+  readonly seo = input<SeoData>(); // resolver binding
 
   readonly bestsellersResource = rxResource({
     stream: () =>
@@ -46,6 +52,6 @@ export class HomePageComponent {
   });
 
   constructor() {
-    effect(() => this._seoService.setSeoData(this.seoData() ?? {}));
+    effect(() => this._seoService.setSeoData(this.seo() ?? {}));
   }
 }

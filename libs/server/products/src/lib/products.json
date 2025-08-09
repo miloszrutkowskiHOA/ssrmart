@@ -15,7 +15,8 @@
       "10000mAh battery",
       "travel power bank",
       "smartphone charger"
-    ]
+    ],
+    "ratingCount": 345
   },
   {
     "id": "550e8400-e29b-41d4-a716-446655440010",
@@ -33,7 +34,8 @@
       "phone earbuds smartwatch",
       "desk charging pad",
       "overnight charging station"
-    ]
+    ],
+    "ratingCount": 329
   },
   {
     "id": "550e8400-e29b-41d4-a716-446655440011",
@@ -51,7 +53,8 @@
       "durable charging cord",
       "6ft USB-C cable",
       "data transfer cable"
-    ]
+    ],
+    "ratingCount": 306
   },
   {
     "id": "550e8400-e29b-41d4-a716-446655440012",
@@ -69,7 +72,8 @@
       "fast transfer speed",
       "encrypted flash drive",
       "portable storage device"
-    ]
+    ],
+    "ratingCount": 383
   },
   {
     "id": "550e8400-e29b-41d4-a716-446655440013",
@@ -87,7 +91,8 @@
       "video conferencing webcam",
       "streaming camera",
       "noise-canceling microphone"
-    ]
+    ],
+    "ratingCount": 475
   },
   {
     "id": "550e8400-e29b-41d4-a716-446655440015",
@@ -105,7 +110,8 @@
       "modular tech bag",
       "photography gear bag",
       "waterproof backpack"
-    ]
+    ],
+    "ratingCount": 494
   },
   {
     "id": "550e8400-e29b-41d4-a716-446655440016",
@@ -123,9 +129,9 @@
       "360-degree rotation",
       "adjustable phone holder",
       "desk phone stand"
-    ]
+    ],
+    "ratingCount": 382
   },
-
   {
     "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
     "name": "Wireless Bluetooth Headphones",
@@ -142,7 +148,8 @@
       "over-ear headphones",
       "30-hour battery life",
       "hands-free calling"
-    ]
+    ],
+    "ratingCount": 437
   },
   {
     "id": "b2c3d4e5-f6a7-8901-bcde-f23456789012",
@@ -160,7 +167,8 @@
       "waterproof earbuds",
       "workout headphones",
       "charging case earbuds"
-    ]
+    ],
+    "ratingCount": 342
   },
   {
     "id": "c3d4e5f6-a7b8-9012-cdef-345678901234",
@@ -178,7 +186,8 @@
       "floating speaker",
       "bass speaker",
       "20-hour battery speaker"
-    ]
+    ],
+    "ratingCount": 423
   },
   {
     "id": "d4e5f6a7-b8c9-0123-defg-456789012345",
@@ -196,7 +205,8 @@
       "3.1 channel soundbar",
       "TV soundbar",
       "wireless subwoofer"
-    ]
+    ],
+    "ratingCount": 394
   },
   {
     "id": "e5f6a7b8-c9d0-1234-efgh-567890123456",
@@ -214,7 +224,8 @@
       "professional headphones",
       "flat frequency response",
       "recording headphones"
-    ]
+    ],
+    "ratingCount": 429
   },
   {
     "id": "f6a7b8c9-d0e1-2345-fghi-678901234567",
@@ -232,7 +243,8 @@
       "built-in speakers turntable",
       "USB turntable",
       "3-speed turntable"
-    ]
+    ],
+    "ratingCount": 373
   },
   {
     "id": "a7b8c9d0-e1f2-3456-ghij-789012345678",
@@ -250,7 +262,8 @@
       "noise-canceling microphone",
       "RGB gaming headset",
       "multi-platform headset"
-    ]
+    ],
+    "ratingCount": 497
   },
   {
     "id": "g1a2m3i4-n5g6-7890-abcd-ef1234567890",
@@ -268,7 +281,8 @@
       "ultra-fast SSD console",
       "ray tracing console",
       "backward compatible console"
-    ]
+    ],
+    "ratingCount": 317
   },
   {
     "id": "g2b3a4m5-i6n7-8901-bcde-f23456789012",
@@ -286,7 +300,8 @@
       "RGB gaming controller",
       "anti-drift controller",
       "40-hour battery controller"
-    ]
+    ],
+    "ratingCount": 409
   },
   {
     "id": "g4d5c6b7-a8m9-0123-defg-456789012345",
@@ -304,7 +319,8 @@
       "tactile switches keyboard",
       "macro keys keyboard",
       "aluminum gaming keyboard"
-    ]
+    ],
+    "ratingCount": 429
   },
   {
     "id": "g5e6d7c8-b9a0-1234-efgh-567890123456",
@@ -322,9 +338,9 @@
       "RGB gaming mouse",
       "lightweight gaming mouse",
       "ergonomic gaming mouse"
-    ]
+    ],
+    "ratingCount": 478
   },
-
   {
     "id": "g1k2j3i4-h5g6-7890-klmn-123456789012",
     "name": "VR Gaming Headset",
@@ -341,7 +357,8 @@
       "motion tracking VR",
       "hand tracking VR",
       "spatial audio VR"
-    ]
+    ],
+    "ratingCount": 482
   },
   {
     "id": "g2l3k4j5-i6h7-8901-lmno-234567890123",
@@ -359,7 +376,8 @@
       "HDR gaming monitor",
       "32-inch gaming monitor",
       "variable refresh rate monitor"
-    ]
+    ],
+    "ratingCount": 421
   },
   {
     "id": "550e8400-e29b-41d4-a716-446655440020",
@@ -377,7 +395,8 @@
       "full-size keyboard",
       "number pad keyboard",
       "24-month battery keyboard"
-    ]
+    ],
+    "ratingCount": 437
   },
   {
     "id": "550e8400-e29b-41d4-a716-446655440021",
@@ -395,7 +414,8 @@
       "IPS panel monitor",
       "adjustable monitor stand",
       "anti-glare monitor"
-    ]
+    ],
+    "ratingCount": 467
   },
   {
     "id": "550e8400-e29b-41d4-a716-446655440022",
@@ -413,7 +433,8 @@
       "precision tracking mouse",
       "horizontal scroll mouse",
       "battery-saving mouse"
-    ]
+    ],
+    "ratingCount": 484
   },
   {
     "id": "550e8400-e29b-41d4-a716-446655440023",
@@ -431,7 +452,8 @@
       "cable management stand",
       "27-inch monitor stand",
       "desk clamp monitor stand"
-    ]
+    ],
+    "ratingCount": 443
   },
   {
     "id": "550e8400-e29b-41d4-a716-446655440024",
@@ -449,7 +471,8 @@
       "USB charging lamp",
       "adjustable desk lamp",
       "touch control lamp"
-    ]
+    ],
+    "ratingCount": 410
   },
   {
     "id": "550e8400-e29b-41d4-a716-446655440025",
@@ -467,7 +490,8 @@
       "lumbar support chair",
       "adjustable office chair",
       "breathable mesh chair"
-    ]
+    ],
+    "ratingCount": 454
   },
   {
     "id": "550e8400-e29b-41d4-a716-446655440027",
@@ -485,7 +509,8 @@
       "presentation remote",
       "slide control remote",
       "PowerPoint remote"
-    ]
+    ],
+    "ratingCount": 329
   },
   {
     "id": "550e8400-e29b-41d4-a716-446655440028",
@@ -503,7 +528,8 @@
       "scanner printer",
       "automatic document feeder",
       "touchscreen printer"
-    ]
+    ],
+    "ratingCount": 436
   },
   {
     "id": "550e8400-e29b-41d4-a716-446655440029",
@@ -521,9 +547,9 @@
       "height-adjustable desk",
       "32-inch monitor converter",
       "pneumatic lift converter"
-    ]
+    ],
+    "ratingCount": 306
   },
-
   {
     "id": "550e8400-e29b-41d4-a716-446655440031",
     "name": "Wireless Charging Pad",
@@ -540,7 +566,8 @@
       "Qi-enabled charger",
       "LED indicator charger",
       "non-slip charging pad"
-    ]
+    ],
+    "ratingCount": 386
   },
   {
     "id": "550e8400-e29b-41d4-a716-446655440041",
@@ -558,7 +585,8 @@
       "professional camera",
       "dual memory card slots",
       "weather-sealed camera"
-    ]
+    ],
+    "ratingCount": 328
   },
   {
     "id": "550e8400-e29b-41d4-a716-446655440042",
@@ -576,7 +604,8 @@
       "image stabilization camera",
       "extreme sports camera",
       "voice control camera"
-    ]
+    ],
+    "ratingCount": 378
   },
   {
     "id": "550e8400-e29b-41d4-a716-446655440043",
@@ -594,7 +623,8 @@
       "removable lens camera",
       "live streaming camera",
       "gimbal-like stabilization"
-    ]
+    ],
+    "ratingCount": 333
   },
   {
     "id": "550e8400-e29b-41d4-a716-446655440044",
@@ -612,7 +642,8 @@
       "30-minute flight drone",
       "obstacle avoidance drone",
       "3-axis gimbal drone"
-    ]
+    ],
+    "ratingCount": 449
   },
   {
     "id": "550e8400-e29b-41d4-a716-446655440045",
@@ -630,7 +661,8 @@
       "46-minute flight drone",
       "advanced obstacle avoidance",
       "1-inch sensor drone"
-    ]
+    ],
+    "ratingCount": 453
   },
   {
     "id": "550e8400-e29b-41d4-a716-446655440046",
@@ -648,7 +680,8 @@
       "ball head tripod",
       "quick-release tripod",
       "travel tripod"
-    ]
+    ],
+    "ratingCount": 360
   },
   {
     "id": "550e8400-e29b-41d4-a716-446655440047",
@@ -666,7 +699,8 @@
       "wide aperture lens",
       "image stabilization lens",
       "weather-sealed lens"
-    ]
+    ],
+    "ratingCount": 335
   },
   {
     "id": "550e8400-e29b-41d4-a716-446655440050",
@@ -684,7 +718,8 @@
       "padded camera strap",
       "anti-slip camera strap",
       "professional camera strap"
-    ]
+    ],
+    "ratingCount": 375
   },
   {
     "id": "550e8400-e29b-41d4-a716-446655440051",
@@ -702,6 +737,7 @@
       "bounce flash",
       "high-speed sync flash",
       "guide number 60 flash"
-    ]
+    ],
+    "ratingCount": 348
   }
 ]

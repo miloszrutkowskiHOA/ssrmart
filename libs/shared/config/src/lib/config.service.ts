@@ -8,6 +8,7 @@ import {
 export type ConfigOptions = {
   baseUrl: string;
   apiUrl: string;
+  isProduction: boolean;
 };
 
 export const CONFIG_OPTIONS = new InjectionToken<ConfigOptions>(

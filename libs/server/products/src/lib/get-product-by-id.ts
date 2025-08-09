@@ -2,9 +2,9 @@ import { Product } from '@ssrmart/shared/types';
 import { Router } from 'express';
 
 export const getProductByIdRoute = (router: Router): void => {
-  const products = require('./products.json') as Product[];
+  router.get('/products/:id', async (req, res) => {
+    const products = [...(await import('./products.json')).default] as Product[];
 
-  router.get('/products/:id', (req, res) => {
     const productId = req.params.id;
     const product = products.find((p) => p.id === productId);
 

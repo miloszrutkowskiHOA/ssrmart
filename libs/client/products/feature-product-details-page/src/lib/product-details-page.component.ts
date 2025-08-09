@@ -7,7 +7,13 @@ import {
 } from '@angular/core';
 import { CurrencyPipe, NgOptimizedImage } from '@angular/common';
 import { Product } from '@ssrmart/shared/types';
-import { ImageSizePipe, SeoData, SeoService } from '@ssrmart/client/utils';
+import {
+  ImageSizePipe,
+  SeoData,
+  SeoService,
+  StructuredData,
+  StructuredDataService,
+} from '@ssrmart/client/utils';
 import { MatButtonModule } from '@angular/material/button';
 
 @Component({
@@ -18,13 +24,22 @@ import { MatButtonModule } from '@angular/material/button';
 })
 export class ProductDetailsPageComponent {
   private readonly _seoService = inject(SeoService);
+  private readonly _structuredDataService = inject(StructuredDataService);
 
   readonly product = input<Product>(); // resolver binding
   readonly seo = input<SeoData>(); // resolver binding
+  readonly structuredData = input<StructuredData>(); // resolver binding
 
   constructor() {
     effect(() => {
       this._seoService.setSeoData(this.seo() ?? {});
+    });
+
+    effect(() => {
+      this._structuredDataService.addStructuredData(
+        this.structuredData() ?? {},
+        'product'
+      );
     });
   }
 }

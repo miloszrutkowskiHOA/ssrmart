@@ -11,4 +11,5 @@ export type Product = {
   category: ProductCategory;
   isBestSeller: boolean;
   keywords: string[];
+  ratingCount: number;
 };

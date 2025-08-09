@@ -11,10 +11,10 @@ import {
 } from './product-search.utils';
 
 export const productSearchRoute = (router: Router): void => {
-  router.post('/products', (req: Request, res: Response) => {
+  router.post('/products', async (req: Request, res: Response) => {
     const query: ProductSearchQuery = req.body;
 
-    let products = [...require('./products.json')] as Product[];
+    let products = [...(await import('./products.json')).default] as Product[];
 
     if (query.filters?.category) {
       products = filterByCategory(products, query.filters.category);

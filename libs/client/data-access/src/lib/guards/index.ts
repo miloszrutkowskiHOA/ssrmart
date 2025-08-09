@@ -1,1 +1,1 @@
-export * from './product-category.guard';
+export * from './product-category.matcher';

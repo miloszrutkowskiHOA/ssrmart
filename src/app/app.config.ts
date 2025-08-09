@@ -11,6 +11,7 @@ import {
 import { provideHttpClient, withFetch } from '@angular/common/http';
 import { provideConfig } from '@ssrmart/shared/config';
 import { IMAGE_CONFIG } from '@angular/common';
+import environment from '../environments/environment';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -18,10 +19,7 @@ export const appConfig: ApplicationConfig = {
     provideZonelessChangeDetection(),
     provideRouter(ROUTES, withComponentInputBinding()),
     provideHttpClient(withFetch()),
-    provideConfig({
-      baseUrl: 'http://localhost:4200',
-      apiUrl: 'http://localhost:4200/api',
-    }),
+    provideConfig(environment),
     {
       provide: IMAGE_CONFIG,
       useValue: {
