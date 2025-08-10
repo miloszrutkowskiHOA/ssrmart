@@ -13,7 +13,7 @@ export const productStructuredDataResolver: ResolveFn<StructuredData> = (
 ) => {
   const productService = inject(ProductService);
   const configService = inject(ConfigService);
-  
+
   return productService
     .getProduct(route.params['id'])
     .pipe(

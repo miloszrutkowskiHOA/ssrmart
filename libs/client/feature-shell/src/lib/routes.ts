@@ -64,6 +64,20 @@ export const ROUTES: Routes = [
           },
         ],
       },
+      {
+        path: 'privacy-policy',
+        loadComponent: () =>
+          import('@ssrmart/client/feature-legal').then(
+            (m) => m.PrivacyPolicyPageComponent
+          ),
+      },
+      {
+        path: 'terms-of-service',
+        loadComponent: () =>
+          import('@ssrmart/client/feature-legal').then(
+            (m) => m.TermsOfServicePageComponent
+          ),
+      },
     ],
   },
 ];
