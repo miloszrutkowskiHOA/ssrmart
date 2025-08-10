@@ -9,12 +9,13 @@ import {
   sortProducts,
   validatePriceRange,
 } from './product-search.utils';
+import { getProducts } from './get-products';
 
 export const productSearchRoute = (router: Router): void => {
   router.post('/products', async (req: Request, res: Response) => {
     const query: ProductSearchQuery = req.body;
 
-    let products = [...(await import('./products.json')).default] as Product[];
+    let products = await getProducts();
 
     if (query.filters?.category) {
       products = filterByCategory(products, query.filters.category);

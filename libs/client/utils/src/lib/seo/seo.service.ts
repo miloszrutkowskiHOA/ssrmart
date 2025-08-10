@@ -27,6 +27,11 @@ export class SeoService {
       this._getImageParamsUrl(seoData.imageUrl)
     );
 
+    this._updateMetaTag(
+      'robots',
+      seoData.noIndex ? 'noindex,nofollow' : 'index,follow'
+    );
+
     this._updateCanonicalUrl(seoData.url);
   }
 

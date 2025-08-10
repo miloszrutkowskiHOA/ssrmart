@@ -29,7 +29,8 @@
         "ssr": {
           "entry": "src/server.ts"
         },
-        "outputMode": "server"
+        "outputMode": "server",
+        "externalDependencies": ["dotenv"]
       },
       "configurations": {
         "production": {

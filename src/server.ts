@@ -11,6 +11,8 @@ import {
   getProductByIdRoute,
   productSearchRoute,
 } from '@ssrmart/server/products';
+import { robotsRoute, sitemapRoute } from '@ssrmart/server/seo';
+
 const serverDistFolder = dirname(fileURLToPath(import.meta.url));
 const browserDistFolder = resolve(serverDistFolder, '../browser');
 
@@ -27,6 +29,10 @@ getProductByIdRoute(apiRouter);
 
 // Mount API router before Angular SSR
 app.use('/api', apiRouter);
+
+// Add SEO routes
+robotsRoute(app);
+sitemapRoute(app);
 
 /**
  * Serve static files from /browser

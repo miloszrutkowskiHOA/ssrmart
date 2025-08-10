@@ -96,7 +96,10 @@ export class ProductSearchPageComponent {
 
   constructor() {
     effect(() => {
-      this._seoService.setSeoData(this.seo() ?? {});
+      this._seoService.setSeoData({
+        ...this.seo(),
+        noIndex: this.productSearchResource.value().length === 0,
+      });
     });
   }
 }

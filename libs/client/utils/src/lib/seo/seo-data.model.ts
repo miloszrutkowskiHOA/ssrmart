@@ -5,4 +5,5 @@ export type SeoData = {
   imageUrl?: string;
   type?: string;
   url?: string;
+  noIndex?: boolean;
 };

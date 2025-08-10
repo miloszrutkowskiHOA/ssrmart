@@ -1,7 +1,7 @@
 {
-  "name": "server-products",
+  "name": "ssrmart-server-seo",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/server/products/src",
+  "sourceRoot": "libs/server/seo/src",
   "projectType": "library",
   "tags": ["scope:server"],
   "targets": {
@@ -9,7 +9,7 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "libs/server/products/jest.config.ts"
+        "jestConfig": "libs/server/seo/jest.config.ts"
       }
     }
   }
