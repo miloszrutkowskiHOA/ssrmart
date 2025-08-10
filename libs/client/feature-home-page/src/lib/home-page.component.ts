@@ -11,7 +11,12 @@ import { RouterLink } from '@angular/router';
 import { ProductCardComponent } from '@ssrmart/client/products/ui-product-card';
 import { ProductService } from '@ssrmart/client/data-access';
 import { rxResource } from '@angular/core/rxjs-interop';
-import { SeoData, SeoService } from '@ssrmart/client/utils';
+import {
+  SeoData,
+  SeoService,
+  StructuredData,
+  StructuredDataService,
+} from '@ssrmart/client/utils';
 
 @Component({
   selector: 'ssrmart-home-page',
@@ -38,8 +43,10 @@ import { SeoData, SeoService } from '@ssrmart/client/utils';
 export class HomePageComponent {
   private readonly _productService = inject(ProductService);
   private readonly _seoService = inject(SeoService);
+  private readonly _structuredDataService = inject(StructuredDataService);
 
   readonly seo = input<SeoData>(); // resolver binding
+  readonly structuredData = input<StructuredData>(); // resolver binding
 
   readonly bestsellersResource = rxResource({
     stream: () =>
@@ -53,5 +60,12 @@ export class HomePageComponent {
 
   constructor() {
     effect(() => this._seoService.setSeoData(this.seo() ?? {}));
+
+    effect(() =>
+      this._structuredDataService.addStructuredData(
+        this.structuredData() ?? {},
+        'website'
+      )
+    );
   }
 }

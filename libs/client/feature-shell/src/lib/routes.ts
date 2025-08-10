@@ -6,6 +6,7 @@ import {
   productSearchSeoResolver,
   homePageSeoResolver,
   productStructuredDataResolver,
+  homePageStructuredDataResolver,
 } from '@ssrmart/client/data-access';
 
 export const ROUTES: Routes = [
@@ -21,6 +22,7 @@ export const ROUTES: Routes = [
           ),
         resolve: {
           seo: homePageSeoResolver,
+          structuredData: homePageStructuredDataResolver,
         },
       },
       {
