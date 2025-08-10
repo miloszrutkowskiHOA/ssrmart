@@ -1,8 +1,10 @@
-import { StructuredData } from './structured-data.type';
+import { inject } from '@angular/core';
+import { StructuredData } from '@ssrmart/client/utils';
+import { ConfigService } from '@ssrmart/shared/config';
 
-export const generateHomePageStructuredData = (
-  baseUrl: string
-): StructuredData => {
+export const getHomePageStructuredData = (): StructuredData => {
+  const baseUrl = inject(ConfigService).get('baseUrl');
+
   return {
     '@context': 'https://schema.org',
     '@type': 'WebSite',

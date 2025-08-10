@@ -3,7 +3,6 @@ import {
   Component,
   effect,
   inject,
-  input,
 } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { NgOptimizedImage } from '@angular/common';
@@ -11,12 +10,9 @@ import { RouterLink } from '@angular/router';
 import { ProductCardComponent } from '@ssrmart/client/products/ui-product-card';
 import { ProductService } from '@ssrmart/client/data-access';
 import { rxResource } from '@angular/core/rxjs-interop';
-import {
-  SeoData,
-  SeoService,
-  StructuredData,
-  StructuredDataService,
-} from '@ssrmart/client/utils';
+import { SeoService, StructuredDataService } from '@ssrmart/client/utils';
+import { getHomePageStructuredData } from './home-page-structured-data';
+import { getHomePageSeo } from './home-page-seo';
 
 @Component({
   selector: 'ssrmart-home-page',
@@ -45,9 +41,6 @@ export class HomePageComponent {
   private readonly _seoService = inject(SeoService);
   private readonly _structuredDataService = inject(StructuredDataService);
 
-  readonly seo = input<SeoData>(); // resolver binding
-  readonly structuredData = input<StructuredData>(); // resolver binding
-
   readonly bestsellersResource = rxResource({
     stream: () =>
       this._productService.searchProducts({
@@ -59,11 +52,11 @@ export class HomePageComponent {
   });
 
   constructor() {
-    effect(() => this._seoService.setSeoData(this.seo() ?? {}));
+    effect(() => this._seoService.setSeoData(getHomePageSeo()));
 
     effect(() =>
       this._structuredDataService.addStructuredData(
-        this.structuredData() ?? {},
+        getHomePageStructuredData(),
         'website'
       )
     );

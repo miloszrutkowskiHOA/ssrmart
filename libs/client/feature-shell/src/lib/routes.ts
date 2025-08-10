@@ -4,9 +4,7 @@ import {
   productResolver,
   productSeoResolver,
   productSearchSeoResolver,
-  homePageSeoResolver,
   productStructuredDataResolver,
-  homePageStructuredDataResolver,
 } from '@ssrmart/client/data-access';
 
 export const ROUTES: Routes = [
@@ -20,10 +18,6 @@ export const ROUTES: Routes = [
           import('@ssrmart/client/feature-home-page').then(
             (m) => m.HomePageComponent
           ),
-        resolve: {
-          seo: homePageSeoResolver,
-          structuredData: homePageStructuredDataResolver,
-        },
       },
       {
         path: 'products',

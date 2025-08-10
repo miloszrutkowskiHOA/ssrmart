@@ -1,12 +1,10 @@
 import { inject } from '@angular/core';
-import { ResolveFn } from '@angular/router';
-import { SeoData } from '@ssrmart/client/utils';
 import { ConfigService } from '@ssrmart/shared/config';
+import { SeoData } from '@ssrmart/client/utils';
 import { PRODUCT_CATEGORIES } from '@ssrmart/shared/types';
 
-export const homePageSeoResolver: ResolveFn<SeoData> = () => {
-  const configService = inject(ConfigService);
-  const baseUrl = configService.get('baseUrl');
+export const getHomePageSeo = (): SeoData => {
+  const baseUrl = inject(ConfigService).get('baseUrl');
 
   return {
     title: 'Welcome to SSRmart - Your Online Shopping Destination',
