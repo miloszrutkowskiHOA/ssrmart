@@ -1,8 +1,8 @@
 import {
   ChangeDetectionStrategy,
   Component,
-  effect,
   inject,
+  DestroyRef,
 } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { NgOptimizedImage } from '@angular/common';
@@ -52,13 +52,15 @@ export class HomePageComponent {
   });
 
   constructor() {
-    effect(() => this._seoService.setSeoData(getHomePageSeo()));
+    this._seoService.setSeoData(getHomePageSeo());
 
-    effect(() =>
-      this._structuredDataService.addStructuredData(
-        getHomePageStructuredData(),
-        'website'
-      )
+    this._structuredDataService.addStructuredData(
+      getHomePageStructuredData(),
+      'website'
     );
+
+    inject(DestroyRef).onDestroy(() => {
+      this._structuredDataService.removeStructuredData('website');
+    });
   }
 }

@@ -37,6 +37,9 @@
       "@ssrmart/client/products/ui-product-card": [
         "libs/client/products/ui-product-card/src/index.ts"
       ],
+      "@ssrmart/client/ui-breadcrumb": [
+        "libs/client/ui-breadcrumb/src/index.ts"
+      ],
       "@ssrmart/client/utils": ["libs/client/utils/src/index.ts"],
       "@ssrmart/server/products": ["libs/server/products/src/index.ts"],
       "@ssrmart/server/seo": ["libs/server/seo/src/index.ts"],

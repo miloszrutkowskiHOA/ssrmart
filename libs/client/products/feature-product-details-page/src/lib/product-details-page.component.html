@@ -1,5 +1,9 @@
 @if (product(); as product) {
 <div class="max-w-[--section-max-w] mx-auto py-8 px-4 xl:px-0">
+  @if (breadcrumb(); as breadcrumb) {
+  <ssrmart-breadcrumb [breadcrumb]="breadcrumb" />
+  }
+  
   <div class="flex flex-col lg:flex-row gap-8">
     <div class="flex-1 min-w-0">
       <img
