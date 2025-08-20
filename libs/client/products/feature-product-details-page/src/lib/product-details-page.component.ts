@@ -20,6 +20,7 @@ import {
 import { MatButtonModule } from '@angular/material/button';
 import { getPdpBreadcrumb } from './get-pdp-breadcrumb';
 import { BreadcrumbComponent } from '@ssrmart/client/ui-breadcrumb';
+import { ConfigService } from '@ssrmart/shared/config';
 
 @Component({
   selector: 'ssrmart-product-details-page',
@@ -36,6 +37,7 @@ import { BreadcrumbComponent } from '@ssrmart/client/ui-breadcrumb';
 export class ProductDetailsPageComponent {
   private readonly _seoService = inject(SeoService);
   private readonly _structuredDataService = inject(StructuredDataService);
+  private readonly _configService = inject(ConfigService);
 
   readonly product = input<Product>(); // resolver binding
   readonly seo = input<SeoData>(); // resolver binding
@@ -61,7 +63,10 @@ export class ProductDetailsPageComponent {
     effect(() => {
       if (this.breadcrumb()) {
         this._structuredDataService.addStructuredData(
-          generateBreadcrumbStructuredData(this.breadcrumb()!),
+          generateBreadcrumbStructuredData(
+            this.breadcrumb()!,
+            this._configService.get('baseUrl')
+          ),
           'breadcrumb'
         );
       }

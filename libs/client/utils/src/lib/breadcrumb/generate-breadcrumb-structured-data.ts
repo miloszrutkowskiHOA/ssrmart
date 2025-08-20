@@ -1,6 +1,6 @@
 import { Breadcrumb } from './breadcrumb.model';
 
-export const generateBreadcrumbStructuredData = (breadcrumb: Breadcrumb) => {
+export const generateBreadcrumbStructuredData = (breadcrumb: Breadcrumb, baseUrl: string) => {
   return {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -8,7 +8,7 @@ export const generateBreadcrumbStructuredData = (breadcrumb: Breadcrumb) => {
       '@type': 'ListItem',
       position: index + 1,
       name: item.label,
-      item: item.url,
+      item: `${baseUrl}${item.url}`,
     })),
   };
 };
