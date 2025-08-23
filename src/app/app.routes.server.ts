@@ -1,4 +1,7 @@
+import { inject } from '@angular/core';
 import { RenderMode, ServerRoute } from '@angular/ssr';
+import { ProductService } from '@ssrmart/client/data-access';
+import { firstValueFrom } from 'rxjs';
 
 export const serverRoutes: ServerRoute[] = [
   {
@@ -10,8 +13,16 @@ export const serverRoutes: ServerRoute[] = [
     renderMode: RenderMode.Server,
   },
   {
-    path: 'products/**',
-    renderMode: RenderMode.Server,
+    path: 'products/:id',
+    renderMode: RenderMode.Prerender,
+    getPrerenderParams: async () => {
+      const productService = inject(ProductService);
+      const products = await firstValueFrom(productService.searchProducts(), {
+        defaultValue: [],
+      });
+
+      return products.map((product) => ({ id: product.id }));
+    },
   },
   {
     path: 'terms-of-service',
@@ -23,7 +34,7 @@ export const serverRoutes: ServerRoute[] = [
   },
   {
     path: 'about',
-    renderMode: RenderMode.Client,
+    renderMode: RenderMode.Server,
   },
   {
     path: '**',
