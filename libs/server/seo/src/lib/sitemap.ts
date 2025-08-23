@@ -33,7 +33,7 @@ const getSitemapItems = async (baseUrl: string): Promise<SitemapItem[]> => {
   ];
 
   const categoriesPages = PRODUCT_CATEGORIES.map((category) => ({
-    loc: `${baseUrl}/products/${category}`,
+    loc: `${baseUrl}/products?category=${category}`,
     lastmod: new Date().toISOString(),
     changefreq: 'daily' as const,
     priority: 0.9,

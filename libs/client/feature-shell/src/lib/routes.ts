@@ -1,6 +1,5 @@
 import { Routes } from '@angular/router';
 import {
-  productCategoryMatcher,
   productResolver,
   productSeoResolver,
   productSearchSeoResolver,
@@ -24,17 +23,6 @@ export const ROUTES: Routes = [
         children: [
           {
             path: '',
-            loadComponent: () =>
-              import(
-                '@ssrmart/client/products/feature-product-search-page'
-              ).then((m) => m.ProductSearchPageComponent),
-            resolve: {
-              seo: productSearchSeoResolver,
-            },
-            runGuardsAndResolvers: 'pathParamsOrQueryParamsChange',
-          },
-          {
-            matcher: productCategoryMatcher,
             loadComponent: () =>
               import(
                 '@ssrmart/client/products/feature-product-search-page'

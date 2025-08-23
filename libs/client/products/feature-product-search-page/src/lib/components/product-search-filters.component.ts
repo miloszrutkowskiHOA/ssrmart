@@ -16,24 +16,28 @@ import {
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatButtonModule } from '@angular/material/button';
-import { PRICE_RANGE_MIN, PRICE_RANGE_MAX, capitalize } from '@ssrmart/client/utils';
+import {
+  PRICE_RANGE_MIN,
+  PRICE_RANGE_MAX,
+  capitalize,
+} from '@ssrmart/client/utils';
 import { CurrencyPipe } from '@angular/common';
 
 type NavigationItem = {
   label: string;
-  path: string;
+  category: string | undefined;
   id: string;
 };
 
 const CATEGORIES_NAVIGATION: NavigationItem[] = [
   {
     label: 'All categories',
-    path: '/products',
+    category: undefined,
     id: 'all',
   },
   ...PRODUCT_CATEGORIES.map((category) => ({
     label: capitalize(category),
-    path: `/products/${category}`,
+    category: category,
     id: category,
   })),
 ];
@@ -47,7 +51,9 @@ const CATEGORIES_NAVIGATION: NavigationItem[] = [
         @for (category of categoriesNavigation; track category.id) {
         <li>
           <a
-            [routerLink]="category.path"
+            [routerLink]="['/products']"
+            [queryParams]="{ category: category.category }"
+            queryParamsHandling="merge"
             [routerLinkActive]="['text-[--mat-sys-primary]', 'font-bold']"
             [routerLinkActiveOptions]="routerLinkActiveOptions"
             >{{ category.label }}</a
@@ -129,7 +135,7 @@ export class ProductSearchFiltersComponent {
   readonly maxPrice = PRICE_RANGE_MAX;
   readonly routerLinkActiveOptions: IsActiveMatchOptions = {
     paths: 'exact',
-    queryParams: 'ignored',
+    queryParams: 'exact',
     matrixParams: 'ignored',
     fragment: 'ignored',
   };

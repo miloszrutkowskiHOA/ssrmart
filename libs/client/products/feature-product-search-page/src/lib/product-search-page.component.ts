@@ -22,6 +22,7 @@ import {
 } from './components';
 import {
   PRODUCT_CATEGORIES,
+  ProductCategory,
   ProductSearchPriceRange,
   ProductSearchQuery,
   ProductSearchSortingOptions,
@@ -53,14 +54,17 @@ export class ProductSearchPageComponent {
   private readonly _productsService = inject(ProductService);
   private readonly _seoService = inject(SeoService);
 
-  // route param binding
-  readonly category = input(undefined, {
-    transform: (value) =>
-      PRODUCT_CATEGORIES.find((category) => category === value),
-  });
-
   // SEO data from resolver
   readonly seo = input<SeoData>();
+
+  readonly category = queryController<ProductCategory | undefined>(
+    'category',
+    undefined,
+    {
+      fromParam: (value) =>
+        PRODUCT_CATEGORIES.find((category) => category === value) ?? undefined,
+    }
+  );
 
   readonly sort = queryController<ProductSearchSortingOptions>('sort', 'name');
   readonly term = queryController('term', '');

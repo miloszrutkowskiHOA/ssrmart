@@ -41,13 +41,13 @@ const getDescription = (
 };
 
 export const productSearchSeoResolver: ResolveFn<SeoData> = (route) => {
-  const category = route.params['category'];
+  const category = route.queryParams['category'];
   const searchTerm = route.queryParams['term'];
   const isBestSeller = route.queryParams['bestsellers'];
 
   const baseUrl = inject(ConfigService).get('baseUrl');
   const url = category
-    ? `${baseUrl}/products/${category}`
+    ? `${baseUrl}/products?category=${category}`
     : `${baseUrl}/products`;
 
   const imageUrl =
