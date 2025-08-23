@@ -13,8 +13,6 @@ export const robotsRoute = (router: Router): void => {
       Disallow: /privacy-policy
       Disallow: /terms-of-service
       Disallow: /api/*
-      Disallow: /products?*
-      Disallow: /products/*?*
 
       Sitemap: ${baseUrl}/sitemap.xml
     `;

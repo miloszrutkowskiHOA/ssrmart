@@ -47,6 +47,13 @@ export const ROUTES: Routes = [
         ],
       },
       {
+        path: 'about',
+        loadComponent: () =>
+          import('@ssrmart/client/feature-about-page').then(
+            (m) => m.AboutPageComponent
+          ),
+      },
+      {
         path: 'privacy-policy',
         loadComponent: () =>
           import('@ssrmart/client/feature-legal').then(
@@ -58,6 +65,13 @@ export const ROUTES: Routes = [
         loadComponent: () =>
           import('@ssrmart/client/feature-legal').then(
             (m) => m.TermsOfServicePageComponent
+          ),
+      },
+      {
+        path: 'about',
+        loadComponent: () =>
+          import('@ssrmart/client/feature-about-page').then(
+            (m) => m.AboutPageComponent
           ),
       },
     ],
