@@ -1,4 +1,5 @@
 @use './theme/theme.scss' as theme;
+@import 'leaflet/dist/leaflet.css';
 
 @tailwind base;
 @tailwind components;

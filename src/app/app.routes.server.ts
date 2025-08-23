@@ -4,7 +4,6 @@ export const serverRoutes: ServerRoute[] = [
   {
     path: '',
     renderMode: RenderMode.Server,
-
   },
   {
     path: 'products',
@@ -21,6 +20,10 @@ export const serverRoutes: ServerRoute[] = [
   {
     path: 'privacy-policy',
     renderMode: RenderMode.Prerender,
+  },
+  {
+    path: 'about',
+    renderMode: RenderMode.Client,
   },
   {
     path: '**',

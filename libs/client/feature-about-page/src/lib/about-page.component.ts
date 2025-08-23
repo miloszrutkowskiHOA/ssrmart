@@ -1,4 +1,9 @@
-import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import {
+  afterNextRender,
+  ChangeDetectionStrategy,
+  Component,
+  inject,
+} from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { SeoService } from '@ssrmart/client/utils';
@@ -19,5 +24,28 @@ export class AboutPageComponent {
 
   constructor() {
     this._seoService.setSeoData(getAboutPageSeo());
+
+    afterNextRender(async () => {
+      await this._initializeMap();
+    });
+  }
+
+  private async _initializeMap(): Promise<void> {
+    const lat = 52.225996;
+    const lng = 20.949808;
+    const zoom = 16;
+
+    try {
+      const L = await import('leaflet');
+      const map = L.map('map').setView([lat, lng], zoom);
+      L.marker([lat, lng]).addTo(map);
+
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution:
+          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      }).addTo(map);
+    } catch (error) {
+      console.error('Failed to initialize map:', error);
+    }
   }
 }
