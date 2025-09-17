@@ -4,13 +4,14 @@ import { DatePipe } from '@angular/common';
 @Component({
   selector: 'ssrmart-terms-of-service-page',
   template: `
+    @defer (hydrate never) {
     <div class="max-w-4xl mx-auto px-4 py-8">
-      <header class="mb-8">
+      <div class="mb-8">
         <h1>Terms of Service</h1>
         <p class="text-gray-600">
           Last updated: {{ currentDate | date : 'longDate' }}
         </p>
-      </header>
+      </div>
 
       <div class="prose prose-lg max-w-none">
         <section class="mb-8">
@@ -351,17 +352,21 @@ import { DatePipe } from '@angular/common';
         </section>
       </div>
 
-      <footer class="mt-12 pt-8 border-t border-gray-200">
+      <div class="mt-12 pt-8 border-t border-gray-200">
         <p class="text-sm text-gray-500 text-center">
           These Terms of Service are effective as of
           {{ currentDate | date : 'longDate' }} and will remain in effect except
           with respect to any changes in their provisions in the future.
         </p>
-      </footer>
+      </div>
     </div>
+    }
   `,
   imports: [DatePipe],
+  host: {
+    class: 'block max-w-4xl mx-auto px-4 py-8',
+  },
 })
 export class TermsOfServicePageComponent {
-  currentDate = new Date();
+  readonly currentDate = new Date();
 }

@@ -53,15 +53,18 @@
     <p>Our most popular products that customers can't get enough of</p>
   </div>
 
+  @defer(hydrate on interaction) {
   <div
     class="grid grid-cols-1 lg:grid-cols-3 gap-8 xl:gap-12 justify-items-center items-stretch max-w-[--section-max-w] mx-auto"
   >
     @for (product of bestsellersResource.value(); track product.id) {
+
     <a [routerLink]="['/products', product.id]">
       <ssrmart-product-card [product]="product" class="h-full" />
     </a>
     }
   </div>
+  }
 
   <a
     matButton="filled"

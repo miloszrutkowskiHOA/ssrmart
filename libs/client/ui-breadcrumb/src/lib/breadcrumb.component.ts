@@ -9,13 +9,13 @@ import { MatIconModule } from '@angular/material/icon';
   template: `
     <nav aria-label="breadcrumb" class="p-4">
       <ol class="flex items-center gap-2 text-gray-500">
-        @for (item of breadcrumb(); track item.url;) {
+        @for (item of breadcrumb(); track item.label;) {
         <li>
           @if ($last) {
           <span class="mat-label-large">{{ item.label }}</span>
           } @else {
           <div class="flex items-center gap-2">
-            <a [routerLink]="item.url" class="underline mat-label-large">{{
+            <a [routerLink]="item.url" [queryParams]="item.queryParams" class="underline mat-label-large">{{
               item.label
             }}</a>
 

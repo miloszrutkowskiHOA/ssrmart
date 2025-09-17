@@ -6,7 +6,8 @@ export const getPdpBreadcrumb = (product: Product): Breadcrumb => {
     { label: 'SSRmart', url: '/' },
     {
       label: capitalize(product.category),
-      url: `/products?category=${product.category}`,
+      url: `/products`,
+      queryParams: { category: product.category },
     },
     { label: product.name, url: `/products/${product.id}` },
   ];

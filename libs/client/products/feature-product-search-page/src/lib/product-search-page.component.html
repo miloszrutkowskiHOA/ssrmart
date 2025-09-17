@@ -1,16 +1,20 @@
 <div
   class="rounded-lg border border-gray-200 p-4 shadow-[--mat-sys-level2] flex-1 self-start sticky top-0"
 >
+  @defer(hydrate on interaction) {
   <ssrmart-product-search-filters
     [(bestsellers)]="isBestSeller"
     [(priceRange)]="priceRange"
   />
+  }
 </div>
 
 <div class="flex-[4] flex flex-col gap-4">
   <div class="flex gap-4 justify-end items-center">
+    @defer(hydrate on interaction) {
     <ssrmart-product-search-term class="w-1/3" [(term)]="term" />
     <ssrmart-product-search-sorting [(sorting)]="sort" />
+    }
   </div>
 
   @if (productSearchResource.isLoading()) {
@@ -27,7 +31,11 @@
   >
     @for (product of productSearchResource.value(); track product.id) {
     <a [routerLink]="['/products', product.id]">
-      <ssrmart-product-card [product]="product" class="h-full" />
+      <ssrmart-product-card
+        [product]="product"
+        [imageLoadPriority]="$index < 6"
+        class="h-full"
+      />
     </a>
     } @empty {
     <div class="col-span-3 text-center my-12">No products found</div>

@@ -18,4 +18,5 @@ import { ImageSizePipe } from '@ssrmart/client/utils';
 })
 export class ProductCardComponent {
   readonly product = input.required<Product>();
+  readonly imageLoadPriority = input<boolean>(true);
 }

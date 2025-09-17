@@ -76,7 +76,8 @@
       "continuous": true,
       "executor": "@angular-devkit/build-angular:dev-server",
       "options": {
-        "allowedHosts": ["b98b5ab8e8f0.ngrok-free.app", ".ngrok-free.app"]
+        "hmr": false,
+        "buildTarget": "ssrmart:build:development"
       },
       "configurations": {
         "production": {
