@@ -1,32 +1,10 @@
 import { NgOptimizedImage } from '@angular/common';
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, output } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { NavigationComponent } from './navigation.component';
 import { RouterLink } from '@angular/router';
-
-type NavItem = {
-  label: string;
-  path: string;
-};
-
-const NAV_ITEMS: NavItem[] = [
-  {
-    label: 'Home',
-    path: '/',
-  },
-  {
-    label: 'Products',
-    path: '/products',
-  },
-  {
-    label: 'About',
-    path: '/about',
-  },
-  {
-    label: 'Blog',
-    path: '/blog',
-  },
-];
 
 @Component({
   selector: 'ssrmart-header',
@@ -36,21 +14,23 @@ const NAV_ITEMS: NavItem[] = [
 
       <div class="flex-auto"></div>
 
-      <nav>
-        <ul class="flex items-center gap-4">
-          @for (item of navItems; track item.path) {
-          <li>
-            <a class="link" [routerLink]="item.path">{{ item.label }}</a>
-          </li>
-          }
+      <ssrmart-navigation class="navigation">
+        <li class="md:ml-4">
+          <a mat-icon-button [routerLink]="'/cart'" aria-label="Cart">
+            <mat-icon color="primary">shopping_cart</mat-icon>
+          </a>
+        </li>
+      </ssrmart-navigation>
 
-          <li class="ml-8">
-            <a mat-icon-button [routerLink]="'/cart'">
-              <mat-icon color="primary">shopping_cart</mat-icon>
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <div class="md:hidden">
+        <button
+          mat-icon-button
+          (click)="openSidenavMenu.emit()"
+          aria-label="Open sidenav menu"
+        >
+          <mat-icon>menu</mat-icon>
+        </button>
+      </div>
     </mat-toolbar>
   `,
   styles: [
@@ -58,11 +38,26 @@ const NAV_ITEMS: NavItem[] = [
       .mat-icon.mat-primary {
         --mat-icon-color: var(--mat-sys-primary);
       }
+
+      .navigation {
+        --navigation-item-display: none;
+
+        @media (screen(md)) {
+          --navigation-item-display: list-item;
+        }
+      }
     `,
   ],
-  imports: [MatToolbarModule, MatIconModule, RouterLink, NgOptimizedImage],
+  imports: [
+    MatToolbarModule,
+    MatIconModule,
+    NgOptimizedImage,
+    MatButtonModule,
+    NavigationComponent,
+    RouterLink,
+  ],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HeaderComponent {
-  readonly navItems = NAV_ITEMS;
+  readonly openSidenavMenu = output<void>();
 }
