@@ -1,6 +1,6 @@
 import { inject } from '@angular/core';
-import { ConfigService } from '@ssrmart/shared/config';
 import { SeoData } from '@ssrmart/client/utils';
+import { ConfigService } from '@ssrmart/shared/config';
 import { PRODUCT_CATEGORIES } from '@ssrmart/shared/types';
 
 export const getHomePageSeo = (): SeoData => {
@@ -19,8 +19,11 @@ export const getHomePageSeo = (): SeoData => {
       'fast shipping',
       ...PRODUCT_CATEGORIES,
     ],
-    type: 'website',
-    url: baseUrl,
-    imageUrl: 'https://images.unsplash.com/photo-1498049794561-7780e7231661',
+    ogType: 'website',
+    ogUrl: baseUrl,
+    ogImage: {
+      url: 'https://images.unsplash.com/photo-1498049794561-7780e7231661',
+      alt: 'Desk with laptop, headphones, smartphone, and smartwatch',
+    },
   };
 };

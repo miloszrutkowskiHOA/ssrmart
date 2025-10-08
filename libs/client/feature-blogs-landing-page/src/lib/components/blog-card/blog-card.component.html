@@ -1,0 +1,42 @@
+<mat-card
+  class="h-full hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+>
+  <img
+    mat-card-image
+    [src]="article().image.url"
+    [alt]="article().image.alt"
+    class="h-48 object-cover"
+  />
+  <mat-card-content class="p-6">
+    <div class="flex items-center gap-2 text-sm text-gray-500 mb-4 pt-4">
+      <span>{{ article().author }}</span>
+      <span>•</span>
+      <span>{{ article().publishedAt | date : 'MMM d, y' }}</span>
+      <span>•</span>
+      <span>{{ article().readTime }} min read</span>
+    </div>
+    <h3 class="text-xl font-bold mb-3 text-gray-900 line-clamp-2">
+      {{ article().title }}
+    </h3>
+    <p class="text-gray-600 mb-4 line-clamp-3">
+      {{ article().excerpt }}
+    </p>
+    <div class="flex flex-wrap gap-2 mb-4">
+      @for (tag of article().tags.slice(0, 3); track tag) {
+      <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">
+        {{ tag }}
+      </span>
+      }
+    </div>
+  </mat-card-content>
+  <mat-card-actions class="p-6 pt-0">
+    <button
+      mat-button
+      color="primary"
+      [routerLink]="['/blog', article().id]"
+      class="font-semibold"
+    >
+      Read More
+    </button>
+  </mat-card-actions>
+</mat-card>

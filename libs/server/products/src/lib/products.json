@@ -4,7 +4,10 @@
     "name": "Compact Power Bank 10000mAh",
     "shortDescription": "Ultra-portable power bank with fast charging technology",
     "description": "This ultra-compact 10000mAh power bank is designed for maximum portability without compromising on charging capacity. Features advanced fast charging technology that automatically detects and delivers optimal charging speeds for any connected device. The high-density battery cells can charge most smartphones 2-3 times on a single charge while maintaining a lightweight profile. Built-in safety features protect against overcharging, overheating, and short circuits for worry-free use. The sleek aluminum housing with LED indicator lights makes it perfect for travel, work, and everyday use.",
-    "imageUrl": "https://images.unsplash.com/photo-1614399113305-a127bb2ca893?fm=webp",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1614399113305-a127bb2ca893?fm=webp",
+      "alt": "Compact Power Bank 10000mAh portable charger with LED indicators"
+    },
     "rating": 4.6,
     "category": "accessories",
     "price": 24.99,
@@ -23,7 +26,10 @@
     "name": "3-in-1 Charging Station",
     "shortDescription": "Simultaneous charging for phone, earbuds, and smartwatch",
     "description": "This elegant charging station is designed to charge multiple devices simultaneously with dedicated zones for smartphones, wireless earbuds, and smartwatches. The primary charging pad supports up to 15W fast charging for compatible devices while the secondary zones provide optimized charging for smaller accessories. The non-slip surface and weighted base ensure devices stay securely in place during charging. LED indicators show charging status for each zone while the compact footprint saves valuable desk or nightstand space. Advanced safety features include foreign object detection and temperature monitoring for safe overnight charging.",
-    "imageUrl": "https://images.unsplash.com/photo-1633583828246-575af220bdc1?fm=webp",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1633583828246-575af220bdc1?fm=webp",
+      "alt": "3-in-1 Charging Station for phone, earbuds, and smartwatch with LED indicators"
+    },
     "rating": 4.5,
     "category": "accessories",
     "price": 149.99,
@@ -42,7 +48,10 @@
     "name": "Braided USB-C Cable 6ft",
     "shortDescription": "Durable fast charging cable with reinforced connectors",
     "description": "This premium braided USB-C cable combines durability with high-performance charging and data transfer capabilities. The double-braided nylon exterior provides exceptional resistance to tangling, fraying, and daily wear while maintaining flexibility. Reinforced aluminum connectors with strain relief ensure long-lasting connection integrity even with frequent plugging and unplugging. Supports fast charging up to 60W and data transfer speeds up to 480Mbps for quick file syncing. The 6-foot length provides convenient reach for charging while using devices comfortably from any angle.",
-    "imageUrl": "https://images.unsplash.com/photo-1595756630452-736bc8ef3693?fm=webp",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1595756630452-736bc8ef3693?fm=webp",
+      "alt": "Braided USB-C Cable 6ft with reinforced aluminum connectors"
+    },
     "rating": 4.4,
     "category": "accessories",
     "price": 19.99,
@@ -61,7 +70,10 @@
     "name": "Ultra-Fast USB 3.0 Flash Drive 128GB",
     "shortDescription": "High-speed portable storage with secure encryption",
     "description": "This high-performance USB 3.0 flash drive delivers blazing-fast transfer speeds up to 150MB/s for quick file transfers and backups. The generous 128GB capacity provides ample space for documents, photos, videos, and applications while the compact design fits easily in pockets or keychains. Advanced security software includes password protection and file encryption to keep sensitive data safe. The retractable connector design protects the USB plug when not in use while the durable metal housing withstands daily use. Compatible with Windows, Mac, and Linux systems for universal file sharing.",
-    "imageUrl": "https://images.unsplash.com/photo-1551818014-7c8ace9c1b5c?fm=webp",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1551818014-7c8ace9c1b5c?fm=webp",
+      "alt": "Ultra-Fast USB 3.0 Flash Drive 128GB with retractable connector"
+    },
     "rating": 4.5,
     "category": "accessories",
     "price": 22.99,
@@ -80,7 +92,10 @@
     "name": "Full HD Webcam with Auto Focus",
     "shortDescription": "Professional 1080p webcam with built-in microphone",
     "description": "This professional-grade webcam delivers crystal-clear 1080p video at 30fps for superior video conferencing and content creation. The advanced autofocus system ensures sharp, detailed images in various lighting conditions while the wide-angle lens captures more of your workspace. Built-in noise-canceling microphones provide clear audio pickup while reducing background noise for professional communication. The universal mounting clip securely attaches to monitors, laptops, or tripods for flexible positioning. Compatible with all major video calling platforms and streaming software for seamless integration into your workflow.",
-    "imageUrl": "https://images.unsplash.com/photo-1623949556303-b0d17d198863?fm=webp",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1623949556303-b0d17d198863?fm=webp",
+      "alt": "Full HD Webcam with Auto Focus and built-in microphone"
+    },
     "rating": 4.6,
     "category": "accessories",
     "price": 79.99,
@@ -99,7 +114,10 @@
     "name": "Professional Tech Backpack",
     "shortDescription": "Modular backpack designed for electronics and gear",
     "description": "This professional-grade backpack is specifically designed for photographers, content creators, and tech professionals who need secure, organized storage for their equipment. The modular interior features customizable padded dividers that can be reconfigured to accommodate cameras, lenses, laptops, and accessories. The weatherproof exterior with water-resistant zippers protects valuable gear from the elements while multiple access points allow quick retrieval without fully opening the pack. A dedicated laptop compartment fits devices up to 15 inches while external attachment points accommodate tripods and other equipment. The ergonomic design distributes weight evenly for comfortable all-day carry.",
-    "imageUrl": "https://images.unsplash.com/photo-1568247067952-eab2ce84a349?fm=webp",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1568247067952-eab2ce84a349?fm=webp",
+      "alt": "Professional Tech Backpack with modular interior and weatherproof exterior"
+    },
     "rating": 4.8,
     "category": "accessories",
     "price": 159.99,
@@ -118,7 +136,10 @@
     "name": "Adjustable Magnetic Phone Stand",
     "shortDescription": "360-degree rotating stand with strong magnetic hold",
     "description": "This premium magnetic phone stand provides secure, hands-free viewing with powerful magnets that work with MagSafe-compatible devices and magnetic cases. The 360-degree rotation mechanism allows effortless switching between portrait and landscape orientations while the adjustable angle ensures optimal viewing for video calls, streaming, or reading. The weighted aluminum base with non-slip padding provides rock-solid stability on any surface while the compact design minimizes desk clutter. The smooth adjustment mechanism operates silently and can be positioned with one hand. Premium materials and precision engineering ensure long-lasting performance and elegant aesthetics that complement any workspace.",
-    "imageUrl": "https://images.unsplash.com/photo-1516245556508-7d60d4ff0f39?fm=webp",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1516245556508-7d60d4ff0f39?fm=webp",
+      "alt": "Adjustable Magnetic Phone Stand with 360-degree rotation and weighted base"
+    },
     "rating": 4.5,
     "category": "accessories",
     "price": 34.99,
@@ -137,7 +158,10 @@
     "name": "Wireless Bluetooth Headphones",
     "shortDescription": "Noise-cancelling over-ear headphones with 30h battery",
     "description": "These premium wireless headphones feature active noise cancellation technology for immersive sound. With 30 hours of battery life, you can enjoy music all day long. The comfortable over-ear design and adjustable headband provide a perfect fit. Built-in microphone allows for hands-free calls. Bluetooth 5.0 ensures stable connection with your devices.",
-    "imageUrl": "https://images.unsplash.com/photo-1619296794093-3df1ae6819a8?fm=webp",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1619296794093-3df1ae6819a8?fm=webp",
+      "alt": "Wireless Bluetooth Headphones with noise-cancelling and 30h battery life"
+    },
     "rating": 4.7,
     "category": "audio",
     "price": 149.99,
@@ -156,7 +180,10 @@
     "name": "True Wireless Earbuds",
     "shortDescription": "Compact earbuds with touch controls and charging case",
     "description": "Experience true freedom with these wireless earbuds that deliver crisp, clear sound. The compact charging case provides up to 24 hours of total playtime. Touch controls let you manage music and calls effortlessly. IPX5 water resistance makes them perfect for workouts. Comes with three sizes of silicone tips for comfortable fit.",
-    "imageUrl": "https://images.unsplash.com/photo-1655804446276-7699884b469b?fm=webp",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1655804446276-7699884b469b?fm=webp",
+      "alt": "True Wireless Earbuds with touch controls and charging case"
+    },
     "rating": 4.5,
     "category": "audio",
     "price": 79.99,
@@ -175,7 +202,10 @@
     "name": "Portable Bluetooth Speaker",
     "shortDescription": "Waterproof speaker with 20h playtime and rich bass",
     "description": "Take your music anywhere with this rugged, waterproof Bluetooth speaker. Delivers powerful sound with deep bass despite its compact size. The 20-hour battery life ensures all-day entertainment. Built-in microphone allows for speakerphone functionality. Floats in water, making it perfect for pool parties and beach outings.",
-    "imageUrl": "https://images.unsplash.com/photo-1547052178-7f2c5a20c332?fm=webp",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1547052178-7f2c5a20c332?fm=webp",
+      "alt": "Portable Bluetooth Speaker with waterproof design and 20h playtime"
+    },
     "rating": 4.6,
     "category": "audio",
     "price": 89.99,
@@ -194,7 +224,10 @@
     "name": "Soundbar with Subwoofer",
     "shortDescription": "3.1 channel home theater system for TV",
     "description": "Enhance your TV viewing experience with this powerful 3.1 channel soundbar system. The included wireless subwoofer delivers deep, room-filling bass. Multiple connectivity options including HDMI ARC, Bluetooth, and optical input. Features different sound modes for movies, music, and news. Sleek design complements any home decor.",
-    "imageUrl": "https://images.unsplash.com/photo-1557376382-e96b6778ffdc?fm=webp",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1557376382-e96b6778ffdc?fm=webp",
+      "alt": "Soundbar with Subwoofer 3.1 channel home theater system"
+    },
     "rating": 4.8,
     "category": "audio",
     "price": 229.99,
@@ -213,7 +246,10 @@
     "name": "Studio Monitor Headphones",
     "shortDescription": "Professional headphones for audio mixing",
     "description": "Designed for audio professionals, these studio headphones provide accurate, flat frequency response for critical listening. The over-ear closed-back design offers excellent noise isolation. Comfortable for long sessions with plush ear cushions and adjustable headband. Detachable cable with gold-plated connectors. Ideal for recording, mixing, and mastering.",
-    "imageUrl": "https://images.unsplash.com/photo-1558590987-ed99c5b46f6a?fm=webp",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1558590987-ed99c5b46f6a?fm=webp",
+      "alt": "Studio Monitor Headphones for professional audio mixing with flat frequency response"
+    },
     "rating": 4.9,
     "category": "audio",
     "price": 179.99,
@@ -232,7 +268,10 @@
     "name": "Vinyl Record Player",
     "shortDescription": "Bluetooth turntable with built-in speakers",
     "description": "Rediscover your vinyl collection with this modern turntable that combines vintage charm with modern features. Built-in stereo speakers deliver warm, authentic sound. Bluetooth connectivity lets you stream records to wireless headphones or speakers. Includes USB output for digitizing your vinyl collection. 3-speed operation (33⅓, 45, 78 RPM) plays all your records.",
-    "imageUrl": "https://images.unsplash.com/photo-1603850121303-d4ade9e5ba65?fm=webp",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1603850121303-d4ade9e5ba65?fm=webp",
+      "alt": "Vinyl Record Player with Bluetooth connectivity and built-in speakers"
+    },
     "rating": 4.4,
     "category": "audio",
     "price": 129.99,
@@ -251,7 +290,10 @@
     "name": "Gaming Headset",
     "shortDescription": "Surround sound headset with microphone",
     "description": "Immerse yourself in games with this high-performance gaming headset featuring 7.1 virtual surround sound. The noise-cancelling microphone ensures clear communication with your team. Comfortable memory foam ear cushions and adjustable headband for long gaming sessions. Multi-platform compatible with PC, consoles, and mobile devices. RGB lighting adds style to your setup.",
-    "imageUrl": "https://images.unsplash.com/photo-1629429407756-4a7703614972?fm=webp",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1629429407756-4a7703614972?fm=webp",
+      "alt": "Gaming Headset with 7.1 surround sound and noise-cancelling microphone"
+    },
     "rating": 4.6,
     "category": "audio",
     "price": 99.99,
@@ -270,7 +312,10 @@
     "name": "Gaming Console Pro",
     "shortDescription": "Next-gen gaming console with 4K graphics and ultra-fast SSD",
     "description": "Experience the future of gaming with this cutting-edge console that delivers stunning 4K visuals and lightning-fast loading times. The custom SSD eliminates long wait times, getting you into your games instantly. With ray tracing technology and 120fps capabilities, every game looks and feels incredibly realistic. The console supports backward compatibility with thousands of games from previous generations, ensuring your gaming library stays relevant. Advanced cooling system keeps performance optimal even during extended gaming sessions.",
-    "imageUrl": "https://images.unsplash.com/photo-1486401899868-0e435ed85128?fm=webp",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1486401899868-0e435ed85128?fm=webp",
+      "alt": "Gaming Console Pro with 4K graphics and ultra-fast SSD"
+    },
     "rating": 4.8,
     "category": "gaming",
     "price": 499.99,
@@ -289,7 +334,10 @@
     "name": "Wireless Gaming Controller",
     "shortDescription": "Pro wireless controller with customizable buttons and RGB lighting",
     "description": "Take your gaming to the next level with this professional-grade wireless controller featuring customizable button mapping and stunning RGB lighting effects. The controller offers precise analog sticks with anti-drift technology and responsive triggers for enhanced gameplay. With up to 40 hours of battery life, you can game for days without interruption. The ergonomic design ensures comfort during marathon gaming sessions, while the wireless connectivity provides freedom of movement up to 30 feet away.",
-    "imageUrl": "https://images.unsplash.com/photo-1616341317041-cf93b2389ef5?fm=webp",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1616341317041-cf93b2389ef5?fm=webp",
+      "alt": "Wireless Gaming Controller with customizable buttons and RGB lighting"
+    },
     "rating": 4.7,
     "category": "gaming",
     "price": 79.99,
@@ -308,7 +356,10 @@
     "name": "Mechanical Gaming Keyboard",
     "shortDescription": "RGB mechanical keyboard with tactile switches and macro keys",
     "description": "Dominate your games with this premium mechanical gaming keyboard featuring tactile switches that provide satisfying feedback and lightning-fast response times. The customizable RGB backlighting creates stunning visual effects that can be synchronized with your games. Dedicated macro keys allow you to program complex commands for competitive advantage, while the durable aluminum frame ensures years of reliable performance. The keyboard includes a comfortable wrist rest and is built to withstand intense gaming sessions.",
-    "imageUrl": "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?fm=webp",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?fm=webp",
+      "alt": "Mechanical Gaming Keyboard with RGB backlighting and tactile switches"
+    },
     "rating": 4.5,
     "category": "gaming",
     "price": 129.99,
@@ -327,7 +378,10 @@
     "name": "Gaming Mouse Precision",
     "shortDescription": "High-precision gaming mouse with 16,000 DPI and programmable buttons",
     "description": "Achieve pixel-perfect accuracy with this professional gaming mouse featuring an advanced 16,000 DPI sensor that can be adjusted on the fly. The mouse includes 8 programmable buttons that can be customized for any game or application. Ergonomic design ensures comfort during extended gaming sessions, while the lightweight construction reduces fatigue. The mouse features customizable RGB lighting and comes with interchangeable side grips to match your preferred grip style.",
-    "imageUrl": "https://images.unsplash.com/photo-1613141412501-9012977f1969?fm=webp",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1613141412501-9012977f1969?fm=webp",
+      "alt": "Gaming Mouse Precision with 16,000 DPI sensor and programmable buttons"
+    },
     "rating": 4.4,
     "category": "gaming",
     "price": 89.99,
@@ -346,7 +400,10 @@
     "name": "VR Gaming Headset",
     "shortDescription": "Wireless VR headset with 4K display and motion tracking",
     "description": "Step into virtual worlds with this cutting-edge VR headset featuring stunning 4K resolution and precise motion tracking technology. The wireless design eliminates cables for complete freedom of movement, while the lightweight construction ensures comfortable extended use. Advanced hand tracking allows for natural interaction with virtual objects without the need for controllers. The headset includes access to hundreds of VR games and experiences, from action-packed adventures to relaxing meditation apps. Built-in spatial audio creates an incredibly immersive soundscape.",
-    "imageUrl": "https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?fm=webp",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?fm=webp",
+      "alt": "VR Gaming Headset with 4K display and wireless motion tracking"
+    },
     "rating": 4.8,
     "category": "gaming",
     "price": 399.99,
@@ -365,7 +422,10 @@
     "name": "Gaming Monitor 4K",
     "shortDescription": "32-inch 4K gaming monitor with 144Hz refresh rate and HDR",
     "description": "Experience gaming like never before with this premium 32-inch 4K gaming monitor featuring a blazing-fast 144Hz refresh rate for silky-smooth gameplay. HDR technology delivers vibrant colors and incredible contrast, making every game look stunning. The monitor includes multiple connectivity options including HDMI 2.1, DisplayPort, and USB-C for maximum compatibility. Advanced gaming features like variable refresh rate eliminate screen tearing and stuttering. The adjustable stand allows for perfect positioning, while the slim bezels create an immersive viewing experience.",
-    "imageUrl": "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?fm=webp",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?fm=webp",
+      "alt": "Gaming Monitor 4K 32-inch with 144Hz refresh rate and HDR"
+    },
     "rating": 4.7,
     "category": "gaming",
     "price": 599.99,
@@ -384,7 +444,10 @@
     "name": "Ergonomic Wireless Office Keyboard",
     "shortDescription": "Comfortable full-size keyboard with quiet keys and number pad",
     "description": "This ergonomic wireless keyboard is designed for all-day comfort with a curved key layout that reduces wrist strain. The quiet scissor-switch keys provide satisfying tactile feedback without disturbing colleagues in shared workspaces. Features a full number pad for efficient data entry and dedicated function keys for quick access to common commands. The reliable 2.4GHz wireless connection ensures stable performance up to 30 feet away. Long-lasting battery provides up to 24 months of use on a single set of batteries.",
-    "imageUrl": "https://images.unsplash.com/photo-1749149661545-154c0c353bd5?fm=webp",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1749149661545-154c0c353bd5?fm=webp",
+      "alt": "Ergonomic Wireless Office Keyboard with quiet keys and number pad"
+    },
     "rating": 4.5,
     "category": "office",
     "price": 49.99,
@@ -403,7 +466,10 @@
     "name": "24-inch LED Monitor",
     "shortDescription": "Full HD monitor with IPS panel and adjustable stand",
     "description": "This 24-inch LED monitor delivers crisp Full HD resolution with vibrant colors thanks to its IPS panel technology. The ultra-slim bezels maximize screen real estate while the adjustable stand allows for perfect positioning to reduce neck strain. Multiple connectivity options including HDMI, VGA, and DisplayPort ensure compatibility with any computer setup. The anti-glare coating reduces eye strain during long work sessions. Energy-efficient LED backlighting provides bright, consistent illumination while keeping power consumption low.",
-    "imageUrl": "https://images.unsplash.com/photo-1615750260764-643b0f01a0af?fm=webp",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1615750260764-643b0f01a0af?fm=webp",
+      "alt": "24-inch LED Monitor with Full HD IPS panel and adjustable stand"
+    },
     "rating": 4.4,
     "category": "office",
     "price": 159.99,
@@ -422,7 +488,10 @@
     "name": "Wireless Optical Mouse",
     "shortDescription": "Comfortable wireless mouse with precision tracking",
     "description": "This wireless optical mouse combines comfort and precision for efficient office work. The ergonomic design fits naturally in your hand while the high-precision optical sensor provides accurate tracking on various surfaces. The scroll wheel includes both vertical and horizontal scrolling for easy navigation through documents and spreadsheets. Reliable 2.4GHz wireless connection eliminates cord clutter on your desk. The mouse automatically enters sleep mode to conserve battery life and includes an on/off switch for extended storage.",
-    "imageUrl": "https://images.unsplash.com/photo-1586349906319-48d20e9d17e5?fm=webp",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1586349906319-48d20e9d17e5?fm=webp",
+      "alt": "Wireless Optical Mouse with precision tracking and ergonomic design"
+    },
     "rating": 4.3,
     "category": "office",
     "price": 24.99,
@@ -441,7 +510,10 @@
     "name": "Adjustable Monitor Stand",
     "shortDescription": "Dual-arm monitor stand for two displays with cable management",
     "description": "Transform your workspace with this professional dual-arm monitor stand that supports two monitors up to 27 inches each. The independently adjustable arms allow for perfect positioning of each screen, promoting better posture and reducing neck strain. Heavy-duty construction supports up to 22 pounds per arm while the built-in cable management system keeps your desk organized. The stand includes both desk clamp and grommet mounting options for versatile installation. Quick-release mechanisms make monitor installation and removal effortless.",
-    "imageUrl": "https://images.unsplash.com/photo-1505209487757-5114235191e5?fm=webp",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1505209487757-5114235191e5?fm=webp",
+      "alt": "Adjustable Monitor Stand dual-arm for two displays with cable management"
+    },
     "rating": 4.7,
     "category": "office",
     "price": 89.99,
@@ -460,7 +532,10 @@
     "name": "LED Desk Lamp with USB Charging",
     "shortDescription": "Adjustable LED desk lamp with wireless charging pad and USB ports",
     "description": "This modern LED desk lamp combines excellent lighting with convenient charging capabilities. The adjustable arm and head allow for precise light positioning while multiple brightness levels and color temperatures accommodate any task. The built-in wireless charging pad supports Qi-enabled devices, and dual USB ports provide additional charging options for other electronics. Touch controls make adjustment easy while the memory function remembers your preferred settings. The energy-efficient LED technology provides bright, flicker-free illumination that reduces eye strain.",
-    "imageUrl": "https://images.unsplash.com/photo-1560074557-d54ddce534f7?fm=webp",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1560074557-d54ddce534f7?fm=webp",
+      "alt": "LED Desk Lamp with USB Charging and wireless charging pad"
+    },
     "rating": 4.6,
     "category": "office",
     "price": 79.99,
@@ -479,7 +554,10 @@
     "name": "Ergonomic Office Chair",
     "shortDescription": "Mesh office chair with lumbar support and adjustable height",
     "description": "This ergonomic office chair provides exceptional comfort and support for long work sessions. The breathable mesh back promotes airflow while the built-in lumbar support maintains proper spinal alignment. The padded seat cushion uses high-density foam that retains its shape over time. Height adjustment, tilt tension, and armrest positioning can all be customized for optimal ergonomics. The five-star base with smooth-rolling casters ensures stability and mobility around your workspace.",
-    "imageUrl": "https://images.unsplash.com/photo-1681418659069-eef28d44aeab?fm=webp",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1681418659069-eef28d44aeab?fm=webp",
+      "alt": "Ergonomic Office Chair with mesh back and lumbar support"
+    },
     "rating": 4.8,
     "category": "office",
     "price": 199.99,
@@ -498,7 +576,10 @@
     "name": "Wireless Presenter Remote",
     "shortDescription": "Presentation remote with laser pointer and slide control",
     "description": "Make professional presentations with confidence using this wireless presenter remote that provides reliable slide control from up to 100 feet away. The intuitive button layout includes forward, back, blank screen, and laser pointer functions for complete presentation control. The built-in laser pointer features a bright red dot that's easily visible in most lighting conditions. The receiver stores conveniently inside the remote for easy transport and the long-lasting battery provides months of use. Compatible with PowerPoint, Keynote, and most presentation software.",
-    "imageUrl": "https://images.unsplash.com/photo-1611850698447-87fe8def613b?fm=webp",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1611850698447-87fe8def613b?fm=webp",
+      "alt": "Wireless Presenter Remote with laser pointer and slide control"
+    },
     "rating": 4.5,
     "category": "office",
     "price": 29.99,
@@ -517,7 +598,10 @@
     "name": "All-in-One Printer",
     "shortDescription": "Wireless inkjet printer with scanning and copying capabilities",
     "description": "This versatile all-in-one printer handles all your office printing needs with wireless printing, scanning, and copying capabilities. The high-quality inkjet technology produces sharp text and vibrant colors for both documents and photos. Automatic document feeder streamlines multi-page scanning and copying tasks while the flatbed scanner accommodates books and bound documents. Wireless connectivity allows printing from smartphones, tablets, and computers without cables. The compact design fits easily on any desk while the intuitive touchscreen interface makes operation simple.",
-    "imageUrl": "https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?fm=webp",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?fm=webp",
+      "alt": "All-in-One Printer with wireless printing, scanning and copying capabilities"
+    },
     "rating": 4.3,
     "category": "office",
     "price": 149.99,
@@ -536,7 +620,10 @@
     "name": "Standing Desk Converter",
     "shortDescription": "Height-adjustable desk converter for sit-stand workstation",
     "description": "Transform any desk into a healthy sit-stand workstation with this adjustable desk converter that promotes better posture and reduces sedentary time. The dual-level platform accommodates both your monitor and keyboard while the smooth pneumatic lift mechanism allows for easy height adjustment. The spacious work surface supports monitors up to 32 inches and includes a separate keyboard tray for optimal ergonomics. The stable base ensures wobble-free typing and mouse movement at any height. Quick assembly requires no tools and the converter fits most standard desks.",
-    "imageUrl": "https://images.unsplash.com/photo-1622131243631-1cf9ff4a8b9e?fm=webp",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1622131243631-1cf9ff4a8b9e?fm=webp",
+      "alt": "Standing Desk Converter height-adjustable for sit-stand workstation"
+    },
     "rating": 4.6,
     "category": "office",
     "price": 249.99,
@@ -555,7 +642,10 @@
     "name": "Wireless Charging Pad",
     "shortDescription": "Fast wireless charging pad with LED indicator and non-slip surface",
     "description": "Keep your devices powered up effortlessly with this fast wireless charging pad that delivers up to 15W of power to compatible smartphones and accessories. The non-slip surface ensures your device stays securely in place while charging, and the LED indicator shows charging status at a glance. The slim profile takes up minimal desk space while the premium materials complement any office decor. Built-in safety features protect against overheating and overcharging for worry-free overnight charging. Compatible with all Qi-enabled devices including the latest smartphones and earbuds.",
-    "imageUrl": "https://images.unsplash.com/photo-1633381638729-27f730955c23?fm=webp",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1633381638729-27f730955c23?fm=webp",
+      "alt": "Wireless Charging Pad with LED indicator and non-slip surface"
+    },
     "rating": 4.5,
     "category": "office",
     "price": 39.99,
@@ -574,7 +664,10 @@
     "name": "DSLR Camera 32MP Full Frame",
     "shortDescription": "Professional full-frame DSLR with dual memory card slots",
     "description": "This professional DSLR camera features a 32-megapixel full-frame sensor that captures incredible detail and dynamic range for both photography and videography. The advanced 61-point autofocus system provides precise subject tracking while the dual memory card slots offer redundant storage for important shoots. The weather-sealed body withstands harsh conditions, making it ideal for outdoor photography. The optical viewfinder provides a natural shooting experience with zero lag. High-speed continuous shooting at 7fps ensures you never miss the perfect moment.",
-    "imageUrl": "https://images.unsplash.com/photo-1616423640778-28d1b53229bd?fm=webp",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1616423640778-28d1b53229bd?fm=webp",
+      "alt": "DSLR Camera 32MP Full Frame with dual memory card slots"
+    },
     "rating": 4.9,
     "category": "photography",
     "price": 1299.99,
@@ -593,7 +686,10 @@
     "name": "Waterproof Action Camera 4K",
     "shortDescription": "Ultra-compact action camera with 4K recording and image stabilization",
     "description": "Capture your adventures in stunning 4K resolution with this ultra-compact action camera that's waterproof down to 33 feet without additional housing. Advanced electronic image stabilization ensures smooth footage even during intense activities like mountain biking or skiing. The camera features multiple shooting modes including time-lapse, slow motion, and burst photo for creative flexibility. Voice control allows hands-free operation while the built-in Wi-Fi enables easy sharing to social media. The durable construction and shock-resistant design make it perfect for extreme sports and outdoor adventures.",
-    "imageUrl": "https://images.unsplash.com/photo-1477160814815-7f4479b86c97?fm=webp",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1477160814815-7f4479b86c97?fm=webp",
+      "alt": "Waterproof Action Camera 4K with image stabilization"
+    },
     "rating": 4.6,
     "category": "photography",
     "price": 199.99,
@@ -612,7 +708,10 @@
     "name": "Professional Action Camera 5K",
     "shortDescription": "High-end action camera with 5K video and removable lens",
     "description": "This professional-grade action camera shoots incredible 5K video and 23-megapixel photos with a unique modular design that allows lens changes for different shooting scenarios. The advanced image stabilization system provides gimbal-like smoothness while the rugged construction survives drops, water, and extreme temperatures. The large touchscreen display makes menu navigation intuitive while the long-lasting battery provides hours of recording time. Multiple mounting options and accessories enable creative shooting angles. Live streaming capabilities let you share your adventures in real-time.",
-    "imageUrl": "https://images.unsplash.com/photo-1677172954692-90cf8bdc91e6?fm=webp",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1677172954692-90cf8bdc91e6?fm=webp",
+      "alt": "Professional Action Camera 5K with removable lens and modular design"
+    },
     "rating": 4.7,
     "category": "photography",
     "price": 349.99,
@@ -631,7 +730,10 @@
     "name": "Compact Drone with 4K Camera",
     "shortDescription": "Foldable drone with 4K camera and 30-minute flight time",
     "description": "This compact foldable drone features a high-quality 4K camera mounted on a 3-axis gimbal for incredibly stable aerial footage. The intelligent flight modes include follow-me, orbit, and waypoint navigation for cinematic shots without requiring piloting expertise. With a 30-minute flight time and 4-mile transmission range, you can capture expansive landscapes and detailed aerial photography. The drone automatically returns to home if the battery gets low or signal is lost. Obstacle avoidance sensors provide safe flying in complex environments.",
-    "imageUrl": "https://images.unsplash.com/photo-1661936955098-b991c99fd023?fm=webp",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1661936955098-b991c99fd023?fm=webp",
+      "alt": "Compact Drone with 4K Camera foldable design and 30-minute flight time"
+    },
     "rating": 4.5,
     "category": "photography",
     "price": 699.99,
@@ -650,7 +752,10 @@
     "name": "Professional Photography Drone",
     "shortDescription": "High-end drone with 5.4K camera and advanced obstacle avoidance",
     "description": "This professional photography drone features a premium 5.4K camera with a 1-inch sensor for exceptional image quality that rivals dedicated cameras. The advanced obstacle avoidance system uses multiple sensors to navigate safely around objects in all directions. Intelligent shooting modes include ActiveTrack, QuickShots, and MasterShots for professional-quality results with minimal effort. The drone offers up to 46 minutes of flight time and can withstand winds up to 24 mph. The included smart controller provides crystal-clear video transmission up to 9.3 miles away.",
-    "imageUrl": "https://images.unsplash.com/photo-1473968512647-3e447244af8f?fm=webp",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1473968512647-3e447244af8f?fm=webp",
+      "alt": "Professional Photography Drone with 5.4K camera and advanced obstacle avoidance"
+    },
     "rating": 4.8,
     "category": "photography",
     "price": 1599.99,
@@ -669,7 +774,10 @@
     "name": "Carbon Fiber Tripod",
     "shortDescription": "Lightweight carbon fiber tripod with ball head and quick-release plate",
     "description": "This professional carbon fiber tripod combines incredible strength with lightweight portability, making it perfect for travel and location photography. The 5-section legs with twist locks allow for quick setup and compact storage while supporting cameras up to 26 pounds. The precision ball head provides smooth adjustments and secure locking in any position. The quick-release plate system enables fast camera mounting and removal. Reversible center column allows for low-angle shots while the spiked feet provide excellent stability on various surfaces.",
-    "imageUrl": "https://images.unsplash.com/photo-1679416725331-fc53a066d890?fm=webp",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1679416725331-fc53a066d890?fm=webp",
+      "alt": "Carbon Fiber Tripod lightweight with ball head and quick-release plate"
+    },
     "rating": 4.7,
     "category": "photography",
     "price": 299.99,
@@ -688,7 +796,10 @@
     "name": "Camera Lens 85mm f/1.4",
     "shortDescription": "Professional portrait lens with wide aperture and image stabilization",
     "description": "This premium 85mm f/1.4 lens is designed for stunning portrait photography with beautiful background blur and exceptional low-light performance. The wide f/1.4 aperture creates gorgeous bokeh while the advanced optical design delivers tack-sharp images with minimal distortion. Built-in image stabilization compensates for camera shake, enabling handheld shooting in challenging conditions. The weather-sealed construction protects against dust and moisture while the silent autofocus motor ensures quiet operation during video recording. The lens features a customizable control ring for easy adjustment of exposure settings.",
-    "imageUrl": "https://images.unsplash.com/photo-1582994254571-52c62d96ebab?fm=webp",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1582994254571-52c62d96ebab?fm=webp",
+      "alt": "Camera Lens 85mm f/1.4 professional portrait lens with image stabilization"
+    },
     "rating": 4.9,
     "category": "photography",
     "price": 599.99,
@@ -707,7 +818,10 @@
     "name": "Camera Strap System",
     "shortDescription": "Quick-release camera strap with dual safety tethers",
     "description": "This innovative camera strap system provides comfortable, secure camera carrying with quick-release functionality for fast shooting. The padded shoulder strap distributes weight evenly while the dual safety tethers ensure your camera never falls even if the primary connection fails. The quick-release mechanism allows instant camera removal for tripod mounting or storage. The adjustable length accommodates photographers of all sizes while the anti-slip padding prevents the strap from sliding off your shoulder. Premium materials and reinforced stitching ensure long-lasting durability even with heavy professional cameras.",
-    "imageUrl": "https://images.unsplash.com/photo-1666594113190-ae964471655e?fm=webp",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1666594113190-ae964471655e?fm=webp",
+      "alt": "Camera Strap System with quick-release and dual safety tethers"
+    },
     "rating": 4.5,
     "category": "photography",
     "price": 79.99,
@@ -726,7 +840,10 @@
     "name": "External Camera Flash",
     "shortDescription": "Wireless TTL flash with swivel head and built-in diffuser",
     "description": "This powerful external flash provides professional lighting control with wireless TTL capabilities and a guide number of 60 for excellent range and power. The swivel head rotates 360 degrees horizontally and 90 degrees vertically for bounce flash techniques that create natural-looking lighting. The built-in diffuser and wide-angle adapter expand lighting options for different shooting scenarios. High-speed sync enables flash photography with fast shutter speeds while the optical slave mode works with any camera system. The LCD panel displays all settings clearly while the intuitive controls make adjustments quick and easy.",
-    "imageUrl": "https://images.unsplash.com/photo-1637905794837-0fcb0a8a34ba?fm=webp",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1637905794837-0fcb0a8a34ba?fm=webp",
+      "alt": "External Camera Flash wireless TTL with swivel head and built-in diffuser"
+    },
     "rating": 4.7,
     "category": "photography",
     "price": 189.99,

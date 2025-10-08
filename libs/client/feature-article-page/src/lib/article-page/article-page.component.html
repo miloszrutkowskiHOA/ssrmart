@@ -1,0 +1,72 @@
+@if (article(); as article) {
+<div class="max-w-4xl mx-auto py-8 px-4 xl:px-0">
+  <header class="mb-8">
+    <div class="mb-6">
+      <span
+        class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium mb-4"
+      >
+        {{ article.category }}
+      </span>
+      <h1 class="text-4xl font-bold text-gray-900 mb-4">{{ article.title }}</h1>
+      <p class="text-xl text-gray-600 mb-6">{{ article.excerpt }}</p>
+
+      <div class="flex flex-wrap items-center gap-4 text-sm text-gray-500 mb-6">
+        <div class="flex items-center gap-2">
+          <span class="font-medium">{{ article.author }}</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <span>{{ article.publishedAt | date : 'MMM d, y' }}</span>
+          @if (article.modifiedAt && article.modifiedAt !== article.publishedAt)
+          {
+          <span>• Updated {{ article.modifiedAt | date : 'MMM d, y' }}</span>
+          }
+        </div>
+        <div class="flex items-center gap-2">
+          <span>{{ article.readTime }} min read</span>
+        </div>
+      </div>
+
+      @if (article.tags.length > 0) {
+      <div class="flex flex-wrap gap-2 mb-6">
+        @for (tag of article.tags; track tag) {
+        <mat-chip>{{ tag }}</mat-chip>
+        }
+      </div>
+      }
+    </div>
+
+    <div class="mb-8">
+      <img
+        [ngSrc]="article.image.url | ssrmartImageSize : 'hero'"
+        [alt]="article.image.alt"
+        width="1200"
+        height="630"
+        priority
+        class="w-full h-auto object-cover rounded-lg"
+        style="aspect-ratio: 1200/630"
+      />
+    </div>
+  </header>
+
+  <article class="max-w-none" [innerHTML]="sanitizedContent()"></article>
+
+  <footer class="mt-12 pt-8 border-t border-gray-200">
+    <div
+      class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4"
+    >
+      <div>
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">
+          About the Author
+        </h3>
+        <p class="text-gray-600">{{ article.author }}</p>
+      </div>
+      <div class="flex gap-4">
+        <button mat-raised-button color="primary" routerLink="/blog">
+          Back to Blog
+        </button>
+        <button mat-button routerLink="/products">Browse Products</button>
+      </div>
+    </div>
+  </footer>
+</div>
+}

@@ -135,5 +135,8 @@
       "typeSeparator": "."
     }
   },
-  "defaultProject": "ssrmart"
+  "defaultProject": "ssrmart",
+  "tui": {
+    "enabled": false
+  }
 }

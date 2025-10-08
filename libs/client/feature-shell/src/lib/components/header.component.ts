@@ -1,8 +1,8 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatIconModule } from '@angular/material/icon';
-import { RouterLink } from '@angular/router';
 import { NgOptimizedImage } from '@angular/common';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { MatIconModule } from '@angular/material/icon';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { RouterLink } from '@angular/router';
 
 type NavItem = {
   label: string;
@@ -21,6 +21,10 @@ const NAV_ITEMS: NavItem[] = [
   {
     label: 'About',
     path: '/about',
+  },
+  {
+    label: 'Blog',
+    path: '/blog',
   },
 ];
 

@@ -1,10 +1,10 @@
 import { inject } from '@angular/core';
 import { ResolveFn } from '@angular/router';
 import { StructuredData } from '@ssrmart/client/utils';
-import { Product } from '@ssrmart/shared/types';
-import { ProductService } from '../services';
 import { ConfigService } from '@ssrmart/shared/config';
+import { Product } from '@ssrmart/shared/types';
 import { map } from 'rxjs';
+import { ProductService } from '../services';
 
 const generateProductStructuredData = (
   product: Product,
@@ -16,7 +16,7 @@ const generateProductStructuredData = (
     '@id': `${baseUrl}/products/${product.id}`,
     name: product.name,
     description: product.shortDescription,
-    image: product.imageUrl,
+    image: product.image.url,
     sku: product.id,
     category: product.category,
     keywords: product.keywords.join(', '),
