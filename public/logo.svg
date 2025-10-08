@@ -8,5 +8,5 @@
   
   <!-- SRRmart text -->
   <text x="0" y="28" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" 
-        font-size="28" font-weight="800" fill="url(#textGradient)">SRRmart</text>
+        font-size="28" font-weight="800" fill="url(#textGradient)">SSRmart</text>
 </svg>
