@@ -4,14 +4,18 @@ import {
   isMainModule,
   writeResponseToNodeResponse,
 } from '@angular/ssr/node';
-import express from 'express';
-import { dirname, resolve } from 'node:path';
-import { fileURLToPath } from 'node:url';
+import {
+  articleSearchRoute,
+  getArticleByIdRoute,
+} from '@ssrmart/server/articles';
 import {
   getProductByIdRoute,
   productSearchRoute,
 } from '@ssrmart/server/products';
 import { robotsRoute, sitemapRoute } from '@ssrmart/server/seo';
+import express from 'express';
+import { dirname, resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 const serverDistFolder = dirname(fileURLToPath(import.meta.url));
 const browserDistFolder = resolve(serverDistFolder, '../browser');
@@ -26,6 +30,8 @@ apiRouter.use(express.json()); // Apply JSON parsing to all API routes
 // Add API routes to the router
 productSearchRoute(apiRouter);
 getProductByIdRoute(apiRouter);
+articleSearchRoute(apiRouter);
+getArticleByIdRoute(apiRouter);
 
 // Mount API router before Angular SSR
 app.use('/api', apiRouter);

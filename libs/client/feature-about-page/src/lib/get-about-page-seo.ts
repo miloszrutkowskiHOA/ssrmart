@@ -9,8 +9,11 @@ export const getAboutPageSeo = (): SeoData => {
     title: 'About SSRmart - Your Smart E-commerce Shopping Destination',
     description:
       'Learn about SSRmart, a leading e-commerce platform offering 100K+ products with lightning-fast delivery, secure shopping, and 24/7 customer support. Discover our story and commitment to smart online shopping.',
-    type: 'website',
-    url: baseUrl,
-    imageUrl: 'https://images.unsplash.com/photo-1498049794561-7780e7231661',
+    ogType: 'website',
+    ogUrl: baseUrl,
+    ogImage: {
+      url: 'https://images.unsplash.com/photo-1498049794561-7780e7231661',
+      alt: 'Desk with laptop, headphones, smartphone, and smartwatch',
+    },
   };
 };

@@ -59,8 +59,8 @@ export const productSearchSeoResolver: ResolveFn<SeoData> = (route) => {
     keywords: ['products', 'shop', 'online store', category, searchTerm].filter(
       Boolean
     ),
-    type: 'website',
-    url,
+    ogType: 'website',
+    ogUrl: url,
     imageUrl,
   };
 };

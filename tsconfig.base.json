@@ -19,6 +19,12 @@
       "@ssrmart/client/feature-about-page": [
         "libs/client/feature-about-page/src/index.ts"
       ],
+      "@ssrmart/client/feature-article-page": [
+        "libs/client/feature-article-page/src/index.ts"
+      ],
+      "@ssrmart/client/feature-blogs-landing-page": [
+        "libs/client/feature-blogs-landing-page/src/index.ts"
+      ],
       "@ssrmart/client/feature-home-page": [
         "libs/client/feature-home-page/src/index.ts"
       ],
@@ -41,6 +47,7 @@
         "libs/client/ui-breadcrumb/src/index.ts"
       ],
       "@ssrmart/client/utils": ["libs/client/utils/src/index.ts"],
+      "@ssrmart/server/articles": ["libs/server/articles/src/index.ts"],
       "@ssrmart/server/products": ["libs/server/products/src/index.ts"],
       "@ssrmart/server/seo": ["libs/server/seo/src/index.ts"],
       "@ssrmart/shared/config": ["libs/shared/config/src/index.ts"],
