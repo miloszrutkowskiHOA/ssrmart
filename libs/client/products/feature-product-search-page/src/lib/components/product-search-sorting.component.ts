@@ -28,7 +28,8 @@ const SORTING_OPTIONS: SortingOption[] = PRODUCT_SEARCH_SORTING_OPTIONS.map(
 @Component({
   selector: 'ssrmart-product-search-sorting',
   template: `
-    <mat-form-field>
+    @defer (hydrate on interaction) {
+    <mat-form-field class="w-full">
       <mat-label>Sort by</mat-label>
       <mat-select [(value)]="sorting">
         @for (option of sortingOptions; track option.value) {
@@ -36,6 +37,7 @@ const SORTING_OPTIONS: SortingOption[] = PRODUCT_SEARCH_SORTING_OPTIONS.map(
         }
       </mat-select>
     </mat-form-field>
+    }
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [MatSelectModule, MatFormFieldModule],

@@ -16,7 +16,9 @@ import {
   SeoService,
 } from '@ssrmart/client/utils';
 import {
-  ProductSearchFiltersComponent,
+  ProductSearchBestsellersControlComponent,
+  ProductSearchCategoriesComponent,
+  ProductSearchPriceRangeComponent,
   ProductSearchSortingComponent,
   ProductSearchTermComponent,
 } from './components';
@@ -38,7 +40,9 @@ import { ProductCardComponent } from '@ssrmart/client/products/ui-product-card';
   templateUrl: './product-search-page.component.html',
   imports: [
     MatCardModule,
-    ProductSearchFiltersComponent,
+    ProductSearchCategoriesComponent,
+    ProductSearchBestsellersControlComponent,
+    ProductSearchPriceRangeComponent,
     ProductSearchTermComponent,
     ProductSearchSortingComponent,
     MatProgressSpinnerModule,
@@ -47,7 +51,7 @@ import { ProductCardComponent } from '@ssrmart/client/products/ui-product-card';
   ],
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
-    class: 'flex gap-4 p-4',
+    class: 'flex  gap-4 p-4 relative',
   },
 })
 export class ProductSearchPageComponent {

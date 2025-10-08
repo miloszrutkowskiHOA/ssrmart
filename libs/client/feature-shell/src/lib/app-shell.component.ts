@@ -19,9 +19,19 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
   selector: 'ssrmart-app-shell',
   template: `
     <mat-drawer-container>
-      @defer (hydrate on interaction) {
-      <ssrmart-header (openSidenavMenu)="drawer.open()" />
-      }
+      <div class="flex flex-col min-h-screen">
+        @defer (hydrate on interaction) {
+        <ssrmart-header (openSidenavMenu)="drawer.open()" />
+        }
+
+        <main class="flex-1">
+          <router-outlet />
+        </main>
+
+        @defer (hydrate on interaction) {
+        <ssrmart-footer />
+        }
+      </div>
 
       <mat-drawer #drawer mode="side" position="end" mode="over">
         @defer (hydrate on interaction) {
@@ -37,14 +47,6 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
         <ssrmart-navigation orientation="vertical" />
         }
       </mat-drawer>
-
-      <main class="flex-1">
-        <router-outlet />
-      </main>
-
-      @defer (hydrate on interaction) {
-      <ssrmart-footer />
-      }
     </mat-drawer-container>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -57,9 +59,6 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
     MatButtonModule,
     NavigationComponent,
   ],
-  host: {
-    class: 'flex flex-col min-h-screen',
-  },
 })
 export default class AppShellComponent {
   private readonly _router = inject(Router);

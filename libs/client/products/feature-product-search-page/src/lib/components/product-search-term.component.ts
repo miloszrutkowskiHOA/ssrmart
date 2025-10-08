@@ -9,11 +9,18 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 @Component({
   selector: 'ssrmart-product-search-term',
   template: `
+    @defer (hydrate on interaction) {
     <mat-form-field class="w-full">
       <mat-label>Search Products</mat-label>
       <mat-icon matPrefix>search</mat-icon>
-      <input matInput type="text" placeholder="Enter search term" [formControl]="termControl" />
+      <input
+        matInput
+        type="text"
+        placeholder="Enter search term"
+        [formControl]="termControl"
+      />
     </mat-form-field>
+    }
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [

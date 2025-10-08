@@ -6,19 +6,28 @@ import {
   LOCALE_ID,
 } from '@angular/core';
 
-type CurrencyTransformFn = (value: number) => string | null;
+type CurrencyTransformFn = (
+  value: number,
+  digitsInfo?: string
+) => string | null;
 
 export const CURRENCY_TRANSFORM = new InjectionToken<CurrencyTransformFn>(
   'CURRENCY_TRANSFORM',
   {
     providedIn: 'root',
     factory: () => {
-      const currencyPipe = new CurrencyPipe(
-        inject(LOCALE_ID),
-        inject(DEFAULT_CURRENCY_CODE)
-      );
+      const localeId = inject(LOCALE_ID);
+      const defaultCurrencyCode = inject(DEFAULT_CURRENCY_CODE);
 
-      return (value: number): string | null => currencyPipe.transform(value);
+      const currencyPipe = new CurrencyPipe(localeId, defaultCurrencyCode);
+
+      return (value: number, digitsInfo?: string): string | null =>
+        currencyPipe.transform(
+          value,
+          defaultCurrencyCode,
+          'symbol',
+          digitsInfo
+        );
     },
   }
 );

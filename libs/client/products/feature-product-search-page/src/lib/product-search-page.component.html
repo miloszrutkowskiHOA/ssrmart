@@ -1,22 +1,17 @@
 <div
-  class="rounded-lg border border-gray-200 p-4 shadow-[--mat-sys-level2] flex-1 self-start sticky top-0"
+  class="rounded-lg border border-gray-200 p-4 shadow-[--mat-sys-level2] flex-auto sticky top-0 self-start flex flex-col gap-4"
 >
-  @defer(hydrate on interaction) {
-  <ssrmart-product-search-filters
+  <ssrmart-product-search-categories class="" />
+  <ssrmart-product-search-bestsellers-control
     [(bestsellers)]="isBestSeller"
-    [(priceRange)]="priceRange"
+    class=""
   />
-  }
+  <ssrmart-product-search-price-range [(priceRange)]="priceRange" class="" />
+  <ssrmart-product-search-term [(term)]="term" class="" />
+  <ssrmart-product-search-sorting [(sorting)]="sort" class="" />
 </div>
 
-<div class="flex-[4] flex flex-col gap-4">
-  <div class="flex gap-4 justify-end items-center">
-    @defer(hydrate on interaction) {
-    <ssrmart-product-search-term class="w-1/3" [(term)]="term" />
-    <ssrmart-product-search-sorting [(sorting)]="sort" />
-    }
-  </div>
-
+<div class="flex-auto flex flex-col gap-4">
   @if (productSearchResource.isLoading()) {
   <div class="flex-1 flex justify-center items-center">
     <mat-progress-spinner
@@ -27,7 +22,7 @@
   </div>
   } @else {
   <div
-    class="grid grid-cols-3 gap-12 justify-items-center items-stretch mx-auto"
+    class="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-12 justify-items-center items-stretch mx-auto"
   >
     @for (product of productSearchResource.value(); track product.id) {
     <a [routerLink]="['/products', product.id]">
