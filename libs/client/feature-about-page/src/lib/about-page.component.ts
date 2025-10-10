@@ -8,19 +8,32 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { SeoService } from '@ssrmart/client/utils';
 import { getAboutPageSeo } from './get-about-page-seo';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import {
+  faFacebook,
+  faXTwitter,
+  faInstagram,
+} from '@fortawesome/free-brands-svg-icons';
+import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'ssrmart-about-page',
   templateUrl: './about-page.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [MatIconModule, MatCardModule],
+  imports: [MatIconModule, MatCardModule, FontAwesomeModule],
   host: {
     class:
-      'block max-w-[--section-max-w] mx-auto py-16 px-4 xl:px-0 flex flex-col gap-16',
+      'block max-w-[--section-max-w] mx-auto py-16 px-[10%] 2xl:px-0 flex flex-col gap-16',
   },
 })
 export class AboutPageComponent {
   private readonly _seoService = inject(SeoService);
+
+  readonly faFacebook = faFacebook;
+  readonly faTwitter = faXTwitter;
+  readonly faInstagram = faInstagram;
+  readonly faPhone = faPhone;
+  readonly faEnvelope = faEnvelope;
 
   constructor() {
     this._seoService.setSeoData(getAboutPageSeo());
