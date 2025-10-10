@@ -20,11 +20,7 @@ import { getHomePageSeo } from './home-page-seo';
   styles: [
     `
       .hero-section {
-        background: linear-gradient(
-          45deg,
-          var(--mat-sys-primary),
-          var(--mat-sys-tertiary)
-        );
+        background: var(--theme-grandient);
       }
     `,
   ],
