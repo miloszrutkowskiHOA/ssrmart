@@ -9,7 +9,7 @@ import { RouterLink } from '@angular/router';
 @Component({
   selector: 'ssrmart-header',
   template: `
-    <mat-toolbar role="heading">
+    <mat-toolbar role="heading" class="shadow-md">
       <img ngSrc="/logo.svg" width="120" height="40" alt="SRRmart logo" />
 
       <div class="flex-auto"></div>
