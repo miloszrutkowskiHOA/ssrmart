@@ -1,4 +1,4 @@
-import { Product, ProductSearchQuery } from '@ssrmart/shared/types';
+import {  ProductSearchQuery } from '@ssrmart/shared/types';
 import { Router, Request, Response } from 'express';
 import {
   filterByCategory,

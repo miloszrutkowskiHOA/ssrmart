@@ -4,16 +4,12 @@ import {
   isMainModule,
   writeResponseToNodeResponse,
 } from '@angular/ssr/node';
-import {
-  articleSearchRoute,
-  getArticleByIdRoute,
-} from '@ssrmart/server/articles';
-import {
-  getProductByIdRoute,
-  productSearchRoute,
-} from '@ssrmart/server/products';
-import { robotsRoute, sitemapRoute } from '@ssrmart/server/seo';
+import registerArticlesRoutes from '@ssrmart/server/articles';
+import registerProductsRoutes from '@ssrmart/server/products';
+import registerSeoRoutes from '@ssrmart/server/seo';
+import registerCartRoutes from '@ssrmart/server/cart';
 import express from 'express';
+import cookieParser from 'cookie-parser';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -23,22 +19,22 @@ const browserDistFolder = resolve(serverDistFolder, '../browser');
 const app = express();
 const angularApp = new AngularNodeAppEngine();
 
+app.use(cookieParser());
+
 // Create API router with its own middleware
 const apiRouter = express.Router();
-apiRouter.use(express.json()); // Apply JSON parsing to all API routes
+apiRouter.use(express.json());
 
 // Add API routes to the router
-productSearchRoute(apiRouter);
-getProductByIdRoute(apiRouter);
-articleSearchRoute(apiRouter);
-getArticleByIdRoute(apiRouter);
+registerProductsRoutes(apiRouter);
+registerArticlesRoutes(apiRouter);
+registerCartRoutes(apiRouter);
 
 // Mount API router before Angular SSR
 app.use('/api', apiRouter);
 
 // Add SEO routes
-robotsRoute(app);
-sitemapRoute(app);
+registerSeoRoutes(app);
 
 /**
  * Serve static files from /browser

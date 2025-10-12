@@ -27,6 +27,9 @@
       "@ssrmart/client/articles/shell": [
         "libs/client/articles/feature-shell/src/index.ts"
       ],
+      "@ssrmart/client/cart/data-access": [
+        "libs/client/cart/data-access/src/index.ts"
+      ],
       "@ssrmart/client/feature-about-page": [
         "libs/client/feature-about-page/src/index.ts"
       ],
@@ -62,6 +65,7 @@
       ],
       "@ssrmart/client/utils": ["libs/client/utils/src/index.ts"],
       "@ssrmart/server/articles": ["libs/server/articles/src/index.ts"],
+      "@ssrmart/server/cart": ["libs/server/cart/src/index.ts"],
       "@ssrmart/server/products": ["libs/server/products/src/index.ts"],
       "@ssrmart/server/seo": ["libs/server/seo/src/index.ts"],
       "@ssrmart/shared/config": ["libs/shared/config/src/index.ts"],

@@ -26,7 +26,7 @@
         >
           {{ product.price | currency }}
         </strong>
-        <button matButton="filled">Add to Cart</button>
+        <button matButton="filled" (click)="addToCart(product.id)">Add to Cart</button>
       </div>
     </div>
   </div>

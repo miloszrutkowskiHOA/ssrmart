@@ -1,10 +1,17 @@
 import { NgOptimizedImage } from '@angular/common';
-import { ChangeDetectionStrategy, Component, output } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  effect,
+  input,
+  output,
+} from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { NavigationComponent } from './navigation.component';
 import { RouterLink } from '@angular/router';
+import { MatBadgeModule } from '@angular/material/badge';
 
 @Component({
   selector: 'ssrmart-header',
@@ -17,7 +24,12 @@ import { RouterLink } from '@angular/router';
       <ssrmart-navigation class="navigation">
         <li class="md:ml-4">
           <a mat-icon-button [routerLink]="'/cart'" aria-label="Cart">
-            <mat-icon color="primary">shopping_cart</mat-icon>
+            <mat-icon
+              color="primary"
+              [matBadge]="itemsInCart()"
+              [matBadgeHidden]="itemsInCart() === 0"
+              >shopping_cart</mat-icon
+            >
           </a>
         </li>
       </ssrmart-navigation>
@@ -55,9 +67,11 @@ import { RouterLink } from '@angular/router';
     MatButtonModule,
     NavigationComponent,
     RouterLink,
+    MatBadgeModule,
   ],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HeaderComponent {
+  readonly itemsInCart = input<number>();
   readonly openSidenavMenu = output<void>();
 }

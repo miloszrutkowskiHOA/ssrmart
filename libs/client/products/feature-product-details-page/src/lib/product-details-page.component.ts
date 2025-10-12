@@ -20,6 +20,7 @@ import { BreadcrumbComponent } from '@ssrmart/client/ui-breadcrumb';
 import { ConfigService } from '@ssrmart/shared/config';
 import { CURRENCY_TRANSFORM } from '@ssrmart/client/utils';
 import { getPdpBreadcrumb, getPdpSeo, getProductStructuredData } from './utils';
+import { CartState } from '@ssrmart/client/cart/data-access';
 
 @Component({
   selector: 'ssrmart-product-details-page',
@@ -38,6 +39,7 @@ export class ProductDetailsPageComponent {
   private readonly _structuredDataService = inject(StructuredDataService);
   private readonly _configService = inject(ConfigService);
   private readonly _currencyTransform = inject(CURRENCY_TRANSFORM);
+  private readonly _cartState = inject(CartState);
 
   readonly product = input.required<Product>(); // resolver binding
 
@@ -56,6 +58,10 @@ export class ProductDetailsPageComponent {
 
     this._registerProductStructuredData();
     this._registerBreadcrumbStructuredData();
+  }
+
+  addToCart(productId: string): void {
+    this._cartState.addToCart(productId);
   }
 
   private _registerProductStructuredData(): void {
