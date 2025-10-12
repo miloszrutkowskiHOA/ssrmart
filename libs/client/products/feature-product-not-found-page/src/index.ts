@@ -1,0 +1,1 @@
+export * from './lib/product-not-found-page.component';

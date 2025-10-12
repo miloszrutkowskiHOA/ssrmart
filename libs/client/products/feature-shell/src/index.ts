@@ -17,6 +17,13 @@ const routes: Routes = [
     runGuardsAndResolvers: 'pathParamsOrQueryParamsChange',
   },
   {
+    path: 'not-found',
+    loadComponent: () =>
+      import('@ssrmart/client/products/product-not-found-page').then(
+        (m) => m.ProductNotFoundPageComponent
+      ),
+  },
+  {
     path: ':id',
     loadComponent: () =>
       import('@ssrmart/client/products/product-details-page').then(

@@ -18,7 +18,7 @@ export const productResolver: ResolveFn<Product> = (
     .getProduct(route.params['id'])
     .pipe(
       catchError(() =>
-        of(new RedirectCommand(router.createUrlTree(['/products'])))
+        of(new RedirectCommand(router.createUrlTree(['/products/not-found'])))
       )
     );
 };

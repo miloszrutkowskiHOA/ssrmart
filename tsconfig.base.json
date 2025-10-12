@@ -48,6 +48,9 @@
       "@ssrmart/client/products/product-details-page": [
         "libs/client/products/feature-product-details-page/src/index.ts"
       ],
+      "@ssrmart/client/products/product-not-found-page": [
+        "libs/client/products/feature-product-not-found-page/src/index.ts"
+      ],
       "@ssrmart/client/products/shell": [
         "libs/client/products/feature-shell/src/index.ts"
       ],

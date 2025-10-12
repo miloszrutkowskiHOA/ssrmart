@@ -14,6 +14,12 @@ export const serverRoutes: ServerRoute[] = [
     renderMode: RenderMode.Server,
   },
   {
+    path: 'products/not-found',
+    renderMode: RenderMode.Server,
+    status: 404,
+    headers: { 'Cache-Control': 'no-cache' },
+  },
+  {
     path: 'products/:id',
     renderMode: RenderMode.Prerender,
     getPrerenderParams: async () => {
