@@ -1,8 +1,4 @@
 import { Routes } from '@angular/router';
-import {
-  articleResolver,
-  articleSeoResolver,
-} from '@ssrmart/client/data-access';
 
 export const ROUTES: Routes = [
   {
@@ -45,26 +41,7 @@ export const ROUTES: Routes = [
       },
       {
         path: 'blog',
-        children: [
-          {
-            path: '',
-            loadComponent: () =>
-              import('@ssrmart/client/feature-blogs-landing-page').then(
-                (m) => m.BlogsLandingPageComponent
-              ),
-          },
-          {
-            path: ':id',
-            loadComponent: () =>
-              import('@ssrmart/client/feature-article-page').then(
-                (m) => m.ArticlePageComponent
-              ),
-            resolve: {
-              article: articleResolver,
-              seo: articleSeoResolver,
-            },
-          },
-        ],
+        loadChildren: () => import('@ssrmart/client/articles/shell'),
       },
     ],
   },

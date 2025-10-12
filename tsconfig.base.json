@@ -15,15 +15,20 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@ssrmart/client/data-access": ["libs/client/data-access/src/index.ts"],
+      "@ssrmart/client/articles/data-access": [
+        "libs/client/articles/data-access/src/index.ts"
+      ],
+      "@ssrmart/client/articles/feature-article-page": [
+        "libs/client/articles/feature-article-page/src/index.ts"
+      ],
+      "@ssrmart/client/articles/feature-blog-page": [
+        "libs/client/articles/feature-blog-page/src/index.ts"
+      ],
+      "@ssrmart/client/articles/shell": [
+        "libs/client/articles/feature-shell/src/index.ts"
+      ],
       "@ssrmart/client/feature-about-page": [
         "libs/client/feature-about-page/src/index.ts"
-      ],
-      "@ssrmart/client/feature-article-page": [
-        "libs/client/feature-article-page/src/index.ts"
-      ],
-      "@ssrmart/client/feature-blogs-landing-page": [
-        "libs/client/feature-blogs-landing-page/src/index.ts"
       ],
       "@ssrmart/client/feature-home-page": [
         "libs/client/feature-home-page/src/index.ts"

@@ -1,5 +1,6 @@
 import { inject } from '@angular/core';
 import { RenderMode, ServerRoute } from '@angular/ssr';
+import { ArticleService } from '@ssrmart/client/articles/data-access';
 import { ProductService } from '@ssrmart/client/products/data-access';
 import { firstValueFrom } from 'rxjs';
 
@@ -22,6 +23,22 @@ export const serverRoutes: ServerRoute[] = [
       });
 
       return products.map((product) => ({ id: product.id }));
+    },
+  },
+  {
+    path: 'blog',
+    renderMode: RenderMode.Server,
+  },
+  {
+    path: 'blog/:id',
+    renderMode: RenderMode.Prerender,
+    getPrerenderParams: async () => {
+      const articleService = inject(ArticleService);
+      const articles = await firstValueFrom(articleService.getArticles(), {
+        defaultValue: [],
+      });
+
+      return articles.map((article) => ({ id: article.id }));
     },
   },
   {
