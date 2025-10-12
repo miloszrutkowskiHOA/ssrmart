@@ -6,6 +6,7 @@ import { provideRouter, withComponentInputBinding } from '@angular/router';
 import { ROUTES } from '@ssrmart/client/feature-shell';
 import {
   provideClientHydration,
+  withHttpTransferCacheOptions,
   withIncrementalHydration,
 } from '@angular/platform-browser';
 import { provideHttpClient, withFetch } from '@angular/common/http';
@@ -15,7 +16,10 @@ import environment from '../environments/environment';
 export const appConfig: ApplicationConfig = {
   providers: [
     provideRouter(ROUTES, withComponentInputBinding()),
-    provideClientHydration(withIncrementalHydration()),
+    provideClientHydration(
+      withIncrementalHydration(),
+      withHttpTransferCacheOptions({ includePostRequests: true })
+    ),
     provideZonelessChangeDetection(),
     provideHttpClient(withFetch()),
     provideConfig(environment),

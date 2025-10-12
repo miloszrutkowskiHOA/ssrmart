@@ -61,6 +61,7 @@ export const ROUTES: Routes = [
           import('@ssrmart/client/feature-legal').then(
             (m) => m.PrivacyPolicyPageComponent
           ),
+        title: 'Privacy Policy | SSRmart',
       },
       {
         path: 'terms-of-service',
@@ -68,13 +69,7 @@ export const ROUTES: Routes = [
           import('@ssrmart/client/feature-legal').then(
             (m) => m.TermsOfServicePageComponent
           ),
-      },
-      {
-        path: 'about',
-        loadComponent: () =>
-          import('@ssrmart/client/feature-about-page').then(
-            (m) => m.AboutPageComponent
-          ),
+        title: 'Terms of Service | SSRmart',
       },
       {
         path: 'blog',
