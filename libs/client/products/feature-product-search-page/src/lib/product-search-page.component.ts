@@ -29,7 +29,7 @@ import {
   ProductSearchQuery,
   ProductSearchSortingOptions,
 } from '@ssrmart/shared/types';
-import { ProductService } from '@ssrmart/client/data-access';
+import { ProductService } from '@ssrmart/client/products/data-access';
 import { rxResource } from '@angular/core/rxjs-interop';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { RouterLink } from '@angular/router';

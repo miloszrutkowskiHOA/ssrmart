@@ -8,7 +8,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { NgOptimizedImage } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { ProductCardComponent } from '@ssrmart/client/products/ui-product-card';
-import { ProductService } from '@ssrmart/client/data-access';
+import { ProductService } from '@ssrmart/client/products/data-access';
 import { rxResource } from '@angular/core/rxjs-interop';
 import { SeoService, StructuredDataService } from '@ssrmart/client/utils';
 import { getHomePageStructuredData } from './home-page-structured-data';

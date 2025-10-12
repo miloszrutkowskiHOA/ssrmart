@@ -5,7 +5,7 @@ import {
   Router,
   ResolveFn,
 } from '@angular/router';
-import { ProductService } from '../services';
+import { ProductService } from '../services/product.service';
 import { Product } from '@ssrmart/shared/types';
 import { catchError, of } from 'rxjs';
 

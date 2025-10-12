@@ -6,7 +6,7 @@ import {
   LOCALE_ID,
 } from '@angular/core';
 
-type CurrencyTransformFn = (
+export type CurrencyTransformFn = (
   value: number,
   digitsInfo?: string
 ) => string | null;

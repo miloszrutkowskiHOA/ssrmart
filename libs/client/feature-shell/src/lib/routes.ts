@@ -2,10 +2,6 @@ import { Routes } from '@angular/router';
 import {
   articleResolver,
   articleSeoResolver,
-  productResolver,
-  productSearchSeoResolver,
-  productSeoResolver,
-  productStructuredDataResolver,
 } from '@ssrmart/client/data-access';
 
 export const ROUTES: Routes = [
@@ -22,31 +18,7 @@ export const ROUTES: Routes = [
       },
       {
         path: 'products',
-        children: [
-          {
-            path: '',
-            loadComponent: () =>
-              import(
-                '@ssrmart/client/products/feature-product-search-page'
-              ).then((m) => m.ProductSearchPageComponent),
-            resolve: {
-              seo: productSearchSeoResolver,
-            },
-            runGuardsAndResolvers: 'pathParamsOrQueryParamsChange',
-          },
-          {
-            path: ':id',
-            loadComponent: () =>
-              import('@ssrmart/client/products/product-details-page').then(
-                (m) => m.ProductDetailsPageComponent
-              ),
-            resolve: {
-              product: productResolver,
-              seo: productSeoResolver,
-              structuredData: productStructuredDataResolver,
-            },
-          },
-        ],
+        loadChildren: () => import('@ssrmart/client/products/shell'),
       },
       {
         path: 'about',

@@ -34,11 +34,17 @@
       "@ssrmart/client/feature-shell": [
         "libs/client/feature-shell/src/index.ts"
       ],
+      "@ssrmart/client/products/data-access": [
+        "libs/client/products/data-access/src/index.ts"
+      ],
       "@ssrmart/client/products/feature-product-search-page": [
         "libs/client/products/feature-product-search-page/src/index.ts"
       ],
       "@ssrmart/client/products/product-details-page": [
         "libs/client/products/feature-product-details-page/src/index.ts"
+      ],
+      "@ssrmart/client/products/shell": [
+        "libs/client/products/feature-shell/src/index.ts"
       ],
       "@ssrmart/client/products/ui-product-card": [
         "libs/client/products/ui-product-card/src/index.ts"

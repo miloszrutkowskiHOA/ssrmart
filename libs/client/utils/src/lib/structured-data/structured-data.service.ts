@@ -1,8 +1,8 @@
 import { inject, Injectable } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 import { StructuredData } from './structured-data.type';
+import { StructuredDataId } from './structured-data-id';
 
-export type StructuredDataId = 'product' | 'website' | 'breadcrumb';
 
 @Injectable({ providedIn: 'root' })
 export class StructuredDataService {

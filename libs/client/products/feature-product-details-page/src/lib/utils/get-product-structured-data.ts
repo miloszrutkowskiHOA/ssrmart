@@ -1,12 +1,7 @@
-import { inject } from '@angular/core';
-import { ResolveFn } from '@angular/router';
-import { StructuredData } from '@ssrmart/client/utils';
-import { ConfigService } from '@ssrmart/shared/config';
-import { Product } from '@ssrmart/shared/types';
-import { map } from 'rxjs';
-import { ProductService } from '../services';
+import { StructuredData } from "@ssrmart/client/utils";
+import { Product } from "@ssrmart/shared/types";
 
-const generateProductStructuredData = (
+export const getProductStructuredData = (
   product: Product,
   baseUrl: string
 ): StructuredData => {
@@ -52,19 +47,4 @@ const generateProductStructuredData = (
       },
     ],
   };
-};
-
-export const productStructuredDataResolver: ResolveFn<StructuredData> = (
-  route
-) => {
-  const productService = inject(ProductService);
-  const configService = inject(ConfigService);
-
-  return productService
-    .getProduct(route.params['id'])
-    .pipe(
-      map((product) =>
-        generateProductStructuredData(product, configService.get('baseUrl'))
-      )
-    );
 };
